@@ -107,6 +107,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2cPV89kPUC9" resolve="Passage" />
     </node>
+    <node concept="1TJgyj" id="1$k0ik$zctK" role="1TKVEi">
+      <property role="IQ2ns" value="1807070609521035120" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="controller" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2QKgNYDxD2" resolve="Controller" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7DyPfOhqScX">
     <property role="EcuMT" value="8818845203728925501" />
@@ -160,13 +167,6 @@
       <property role="20kJfa" value="devices" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2QKgNYDxHI" resolve="Device" />
-    </node>
-    <node concept="1TJgyj" id="2QKgNYDxHP" role="1TKVEi">
-      <property role="IQ2ns" value="51440707317406581" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="sensors" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="2QKgNYDxE4" resolve="Sensor" />
     </node>
   </node>
   <node concept="1TIwiD" id="74CaDYViif">
@@ -372,8 +372,15 @@
       <property role="IQ2ns" value="51440707317406501" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="actuators" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="2QKgNYDxD7" resolve="Actuator" />
+    </node>
+    <node concept="1TJgyj" id="1$k0ik$zctH" role="1TKVEi">
+      <property role="IQ2ns" value="1807070609521035117" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="sensors" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="2QKgNYDxE4" resolve="Sensor" />
     </node>
   </node>
   <node concept="1TIwiD" id="2QKgNYDxD7">
@@ -441,8 +448,9 @@
     </node>
     <node concept="1TJgyj" id="2QKgNYDxIf" role="1TKVEi">
       <property role="IQ2ns" value="51440707317406607" />
-      <property role="20kJfa" value="controllers" />
-      <ref role="20lvS9" node="2QKgNYDxD2" resolve="Controller" />
+      <property role="20kJfa" value="space" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="74CaDYVii1" resolve="Space" />
     </node>
   </node>
   <node concept="25R3W" id="2QKgNYDxFr">
@@ -524,12 +532,6 @@
       <property role="IQ2nx" value="51440707317406490" />
       <property role="TrG5h" value="height" />
       <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
-    </node>
-    <node concept="1TJgyj" id="2QKgNYDxGu" role="1TKVEi">
-      <property role="IQ2ns" value="51440707317406494" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="rooms" />
-      <ref role="20lvS9" node="74CaDYViif" resolve="Room" />
     </node>
   </node>
   <node concept="1TIwiD" id="2QKgNYDxHI">
