@@ -9,19 +9,47 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import jetbrains.mps.smodel.runtime.ConceptPresentationBuilder;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
+  private ConceptPresentation props_Actuator;
+  private ConceptPresentation props_Controller;
+  private ConceptPresentation props_Device;
   private ConceptPresentation props_Door;
   private ConceptPresentation props_Floor;
   private ConceptPresentation props_House;
   private ConceptPresentation props_OuterSpace;
   private ConceptPresentation props_Passage;
   private ConceptPresentation props_Room;
+  private ConceptPresentation props_Sensor;
   private ConceptPresentation props_Space;
+  private ConceptPresentation props_Window;
 
   @Override
   @Nullable
   public ConceptPresentation getDescriptor(SAbstractConcept c) {
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
+      case LanguageConceptSwitch.Actuator:
+        if (props_Actuator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("It takes an electrical input and turns it into physical action. Operates in the reverse direction of a sensor. ");
+          cpb.presentationByName();
+          props_Actuator = cpb.create();
+        }
+        return props_Actuator;
+      case LanguageConceptSwitch.Controller:
+        if (props_Controller == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Controller in IoT that connects Sensors → Actuators (e.g. Arduino)");
+          cpb.presentationByName();
+          props_Controller = cpb.create();
+        }
+        return props_Controller;
+      case LanguageConceptSwitch.Device:
+        if (props_Device == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Device = cpb.create();
+        }
+        return props_Device;
       case LanguageConceptSwitch.Door:
         if (props_Door == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -69,6 +97,14 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Room = cpb.create();
         }
         return props_Room;
+      case LanguageConceptSwitch.Sensor:
+        if (props_Sensor == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("IoT Sensor (e.g. Temperature Sensors)");
+          cpb.presentationByName();
+          props_Sensor = cpb.create();
+        }
+        return props_Sensor;
       case LanguageConceptSwitch.Space:
         if (props_Space == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -76,6 +112,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Space = cpb.create();
         }
         return props_Space;
+      case LanguageConceptSwitch.Window:
+        if (props_Window == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByName();
+          props_Window = cpb.create();
+        }
+        return props_Window;
     }
     return null;
   }

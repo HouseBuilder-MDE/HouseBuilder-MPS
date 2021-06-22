@@ -18,17 +18,25 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.adapter.ids.PrimitiveTypeId;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
+  /*package*/ final ConceptDescriptor myConceptActuator = createDescriptorForActuator();
+  /*package*/ final ConceptDescriptor myConceptController = createDescriptorForController();
+  /*package*/ final ConceptDescriptor myConceptDevice = createDescriptorForDevice();
   /*package*/ final ConceptDescriptor myConceptDoor = createDescriptorForDoor();
   /*package*/ final ConceptDescriptor myConceptFloor = createDescriptorForFloor();
   /*package*/ final ConceptDescriptor myConceptHouse = createDescriptorForHouse();
   /*package*/ final ConceptDescriptor myConceptOuterSpace = createDescriptorForOuterSpace();
   /*package*/ final ConceptDescriptor myConceptPassage = createDescriptorForPassage();
   /*package*/ final ConceptDescriptor myConceptRoom = createDescriptorForRoom();
+  /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
   /*package*/ final ConceptDescriptor myConceptSpace = createDescriptorForSpace();
+  /*package*/ final ConceptDescriptor myConceptWindow = createDescriptorForWindow();
+  /*package*/ final EnumerationDescriptor myEnumerationActuatorType = new EnumerationDescriptor_ActuatorType();
+  /*package*/ final EnumerationDescriptor myEnumerationDeviceType = new EnumerationDescriptor_DeviceType();
   /*package*/ final EnumerationDescriptor myEnumerationDoorType = new EnumerationDescriptor_DoorType();
   /*package*/ final EnumerationDescriptor myEnumerationGroundType = new EnumerationDescriptor_GroundType();
   /*package*/ final EnumerationDescriptor myEnumerationOuterSpaceType = new EnumerationDescriptor_OuterSpaceType();
   /*package*/ final EnumerationDescriptor myEnumerationRoomType = new EnumerationDescriptor_RoomType();
+  /*package*/ final EnumerationDescriptor myEnumerationSensorType = new EnumerationDescriptor_SensorType();
   /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeDate = new ConstrainedStringDatatypeDescriptorImpl(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116d6ea9L, "Date", "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/8818845203729051305", "^([0-2][0-9]|(3)[0-1])(\\/)(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$");
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -44,13 +52,19 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDoor, myConceptFloor, myConceptHouse, myConceptOuterSpace, myConceptPassage, myConceptRoom, myConceptSpace);
+    return Arrays.asList(myConceptActuator, myConceptController, myConceptDevice, myConceptDoor, myConceptFloor, myConceptHouse, myConceptOuterSpace, myConceptPassage, myConceptRoom, myConceptSensor, myConceptSpace, myConceptWindow);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(SConceptId id) {
     switch (myIndexSwitch.index(id)) {
+      case LanguageConceptSwitch.Actuator:
+        return myConceptActuator;
+      case LanguageConceptSwitch.Controller:
+        return myConceptController;
+      case LanguageConceptSwitch.Device:
+        return myConceptDevice;
       case LanguageConceptSwitch.Door:
         return myConceptDoor;
       case LanguageConceptSwitch.Floor:
@@ -63,8 +77,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPassage;
       case LanguageConceptSwitch.Room:
         return myConceptRoom;
+      case LanguageConceptSwitch.Sensor:
+        return myConceptSensor;
       case LanguageConceptSwitch.Space:
         return myConceptSpace;
+      case LanguageConceptSwitch.Window:
+        return myConceptWindow;
       default:
         return null;
     }
@@ -72,13 +90,43 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationDoorType, myEnumerationGroundType, myEnumerationOuterSpaceType, myEnumerationRoomType, myCSDatatypeDate);
+    return Arrays.asList(myEnumerationActuatorType, myEnumerationDeviceType, myEnumerationDoorType, myEnumerationGroundType, myEnumerationOuterSpaceType, myEnumerationRoomType, myEnumerationSensorType, myCSDatatypeDate);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
     return myIndexSwitch.index(c);
   }
 
+  private static ConceptDescriptor createDescriptorForActuator() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HBML", "Actuator", 0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a47L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406279");
+    b.version(2);
+    b.property("type", 0xb6c10cfea61a4aL).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a56L)).origin("51440707317406282").done();
+    b.associate("device", 0xb6c10cfea61b97L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b6eL).optional(false).origin("51440707317406615").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForController() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HBML", "Controller", 0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a42L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406274");
+    b.version(2);
+    b.property("model", 0xb6c10cfea61a45L).type(PrimitiveTypeId.STRING).origin("51440707317406277").done();
+    b.aggregate("actuators", 0xb6c10cfea61b25L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a47L).optional(false).ordered(true).multiple(true).origin("51440707317406501").done();
+    b.aggregate("sensors", 0x19140125248cc76dL).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a84L).optional(false).ordered(true).multiple(true).origin("1807070609521035117").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForDevice() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HBML", "Device", 0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b6eL);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406574");
+    b.version(2);
+    b.property("type", 0xb6c10cfea61b71L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61afeL)).origin("51440707317406577").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForDoor() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HBML", "Door", 0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7aa11L);
     b.class_(false, false, false);
@@ -113,6 +161,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("buildingDate", 0x7a62d4fd116b50afL).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116d6ea9L)).origin("8818845203728912559").done();
     b.aggregate("floors", 0x7a62d4fd116b8344L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116b833dL).optional(false).ordered(true).multiple(true).origin("8818845203728925508").done();
     b.aggregate("passages", 0x2335ec8254e140c2L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7aa09L).optional(true).ordered(true).multiple(true).origin("2537194009607094466").done();
+    b.aggregate("controller", 0x19140125248cc770L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a42L).optional(true).ordered(true).multiple(true).origin("1807070609521035120").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForOuterSpace() {
@@ -141,6 +190,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("type", 0x1c4a0aa7eed2490L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2492L)).origin("127403343607571600").done();
     b.property("height", 0x2335ec8254d7a9e0L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("2537194009606466016").done();
+    b.aggregate("windows", 0xb6c10cfea61b91L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L).optional(true).ordered(true).multiple(true).origin("51440707317406609").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSensor() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HBML", "Sensor", 0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a84L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406340");
+    b.version(2);
+    b.property("type", 0xb6c10cfea61a87L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61adbL)).origin("51440707317406343").done();
+    b.property("value", 0xb6c10cfea61a89L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("51440707317406345").done();
+    b.associate("space", 0xb6c10cfea61b8fL).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2481L).optional(false).origin("51440707317406607").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSpace() {
@@ -151,6 +212,18 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("length", 0x1c4a0aa7eed248aL).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("127403343607571594").done();
     b.property("width", 0x2335ec8254d7a9e3L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("2537194009606466019").done();
+    b.aggregate("devices", 0xb6c10cfea61b73L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b6eL).optional(true).ordered(true).multiple(true).origin("51440707317406579").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForWindow() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HBML", "Window", 0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L);
+    b.class_(false, false, false);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
+    b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406482");
+    b.version(2);
+    b.property("doors", 0xb6c10cfea61b15L).type(PrimitiveTypeId.INTEGER).origin("51440707317406485").done();
+    b.property("width", 0xb6c10cfea61b17L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("51440707317406487").done();
+    b.property("height", 0xb6c10cfea61b1aL).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("51440707317406490").done();
     return b.create();
   }
 }

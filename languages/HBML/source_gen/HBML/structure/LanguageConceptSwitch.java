@@ -9,23 +9,33 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public final class LanguageConceptSwitch {
   private final LanguageConceptIndex myIndex;
-  public static final int Door = 0;
-  public static final int Floor = 1;
-  public static final int House = 2;
-  public static final int OuterSpace = 3;
-  public static final int Passage = 4;
-  public static final int Room = 5;
-  public static final int Space = 6;
+  public static final int Actuator = 0;
+  public static final int Controller = 1;
+  public static final int Device = 2;
+  public static final int Door = 3;
+  public static final int Floor = 4;
+  public static final int House = 5;
+  public static final int OuterSpace = 6;
+  public static final int Passage = 7;
+  public static final int Room = 8;
+  public static final int Sensor = 9;
+  public static final int Space = 10;
+  public static final int Window = 11;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xb0b8832625824427L, 0x889661f7684b0da0L);
+    builder.put(0xb6c10cfea61a47L, Actuator);
+    builder.put(0xb6c10cfea61a42L, Controller);
+    builder.put(0xb6c10cfea61b6eL, Device);
     builder.put(0x2335ec8254d7aa11L, Door);
     builder.put(0x7a62d4fd116b833dL, Floor);
     builder.put(0x7a62d4fd116b5067L, House);
     builder.put(0x2335ec8254df69eaL, OuterSpace);
     builder.put(0x2335ec8254d7aa09L, Passage);
     builder.put(0x1c4a0aa7eed248fL, Room);
+    builder.put(0xb6c10cfea61a84L, Sensor);
     builder.put(0x1c4a0aa7eed2481L, Space);
+    builder.put(0xb6c10cfea61b12L, Window);
     myIndex = builder.seal();
   }
 
