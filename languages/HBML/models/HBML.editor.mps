@@ -727,7 +727,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="Qm4o1LA5Ec" role="3EZMnx">
-        <property role="3F0ifm" value="device" />
+        <property role="3F0ifm" value="connected to device" />
       </node>
       <node concept="1iCGBv" id="Qm4o1LA5Ed" role="3EZMnx">
         <ref role="1NtTu8" to="hq94:2QKgNYDxIn" resolve="device" />
