@@ -15,7 +15,147 @@
   </languages>
   <imports>
     <import index="prp3" ref="r:52ea8481-08b2-4cbd-ad9d-1b42825f7d09(jetbrains.mps.lang.constraints.rules.kinds.constraints)" />
+    <import index="hq94" ref="r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
-  <registry />
+  <registry>
+    <language id="ea3159bf-f48e-4720-bde2-86dba75f0d34" name="jetbrains.mps.lang.context.defs">
+      <concept id="7291380803376202513" name="jetbrains.mps.lang.context.defs.structure.TypedDefReference" flags="ng" index="3QpRc$">
+        <reference id="7291380803376221790" name="declaration" index="3QpVTF" />
+      </concept>
+    </language>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+    </language>
+    <language id="b3551702-269c-4f05-ba61-58060cef4292" name="jetbrains.mps.lang.rulesAndMessages">
+      <concept id="315923949160549991" name="jetbrains.mps.lang.rulesAndMessages.structure.RuleWithMessage" flags="ng" index="1DCEPf">
+        <child id="1400749580825440508" name="rule" index="2j4cqI" />
+        <child id="315923949160550022" name="messageProvider" index="1DCEQI" />
+      </concept>
+      <concept id="315923949160550017" name="jetbrains.mps.lang.rulesAndMessages.structure.InlineMessageProvider" flags="ng" index="1DCEQD">
+        <child id="5258059200641510856" name="messagesExpr" index="16N$OO" />
+      </concept>
+    </language>
+    <language id="134c38d4-e3af-4d9e-b069-1c7df0a4005d" name="jetbrains.mps.lang.constraints.rules.skeleton">
+      <concept id="1867733327984720090" name="jetbrains.mps.lang.constraints.rules.skeleton.structure.RulesConstraintsRoot" flags="ng" index="3Oh7Pa">
+        <reference id="1867733327984720094" name="concept" index="3Oh7Pe" />
+        <child id="1867733327984720091" name="block" index="3Oh7Pb" />
+      </concept>
+      <concept id="1867733327985055562" name="jetbrains.mps.lang.constraints.rules.skeleton.structure.RulesBlock" flags="ng" index="3OnDbq">
+        <reference id="1867733327985055564" name="kind" index="3OnDbs" />
+        <child id="1867733327985055563" name="members" index="3OnDbr" />
+      </concept>
+    </language>
+    <language id="47257bf3-78d3-470b-89d9-8c3261a61d15" name="jetbrains.mps.lang.constraints.rules">
+      <concept id="1328301445982517233" name="jetbrains.mps.lang.constraints.rules.structure.ExpressionWrapper" flags="ng" index="2K0Yjh">
+        <child id="1328301445982532877" name="expression" index="2K0yoH" />
+      </concept>
+      <concept id="315923949160453290" name="jetbrains.mps.lang.constraints.rules.structure.RuleIdHolder" flags="ng" index="1DRju2">
+        <property id="6714410169261853888" name="ruleId" index="EcuMT" />
+      </concept>
+      <concept id="7291380803376279010" name="jetbrains.mps.lang.constraints.rules.structure.Rule" flags="ng" index="3Qq5Rn">
+        <child id="1328301445982561464" name="expr" index="2K0Fuo" />
+      </concept>
+    </language>
+    <language id="ad93155d-79b2-4759-b10c-55123e763903" name="jetbrains.mps.lang.messages">
+      <concept id="5258059200642172255" name="jetbrains.mps.lang.messages.structure.CombinedMessageExpression" flags="ng" index="16I2mz">
+        <child id="5258059200642172257" name="part" index="16I2mt" />
+      </concept>
+      <concept id="5258059200641510853" name="jetbrains.mps.lang.messages.structure.LiteralMessageExpression" flags="ng" index="16N$OT">
+        <property id="5258059200641510854" name="message" index="16N$OU" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3Oh7Pa" id="6yNBuAuP77u">
+    <ref role="3Oh7Pe" to="hq94:2QKgNYDxGi" resolve="Window" />
+    <node concept="3OnDbq" id="6yNBuAuP7xv" role="3Oh7Pb">
+      <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
+      <node concept="1DCEPf" id="6yNBuAuP7xx" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6yNBuAuP7xy" role="2j4cqI">
+          <property role="EcuMT" value="7544547427493378146" />
+          <property role="TrG5h" value="MaxHeight" />
+          <node concept="2K0Yjh" id="6yNBuAuP7xz" role="2K0Fuo">
+            <node concept="2dkUwp" id="6yNBuAuPdqh" role="2K0yoH">
+              <node concept="2YIFZM" id="6yNBuAuP7y4" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="6yNBuAuP7OB" role="37wK5m">
+                  <node concept="3QpRc$" id="6yNBuAuP7Dj" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="6yNBuAuP7Yk" role="2OqNvi">
+                    <ref role="3TsBF5" to="hq94:2QKgNYDxGq" resolve="height" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2YIFZM" id="6yNBuAuPLpb" role="3uHU7w">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="6yNBuAuPMe1" role="37wK5m">
+                  <node concept="2OqwBi" id="6yNBuAuPLGN" role="2Oq$k0">
+                    <node concept="3QpRc$" id="6yNBuAuPLpW" role="2Oq$k0">
+                      <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                    </node>
+                    <node concept="2Xjw5R" id="6yNBuAuPLXA" role="2OqNvi">
+                      <node concept="1xMEDy" id="6yNBuAuPLXC" role="1xVPHs">
+                        <node concept="chp4Y" id="6yNBuAuPM0m" role="ri$Ld">
+                          <ref role="cht4Q" to="hq94:74CaDYViif" resolve="Room" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="6yNBuAuPMpf" role="2OqNvi">
+                    <ref role="3TsBF5" to="hq94:2cPV89kPUBw" resolve="height" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6yNBuAuP7x_" role="1DCEQI">
+          <node concept="16I2mz" id="6yNBuAuP9ND" role="16N$OO">
+            <node concept="16N$OT" id="6yNBuAuP9NE" role="16I2mt">
+              <property role="16N$OU" value="Window height must be lower than the room height" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

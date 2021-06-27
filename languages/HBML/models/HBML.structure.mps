@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -91,7 +92,7 @@
     <node concept="1TJgyi" id="7DyPfOhqP2J" role="1TKVEl">
       <property role="IQ2nx" value="8818845203728912559" />
       <property role="TrG5h" value="buildingDate" />
-      <ref role="AX2Wp" node="7DyPfOhrmUD" resolve="Date" />
+      <ref role="AX2Wp" node="7DyPfOhrmUD" resolve="DateMY" />
     </node>
     <node concept="1TJgyj" id="7DyPfOhqSd4" role="1TKVEi">
       <property role="IQ2ns" value="8818845203728925508" />
@@ -138,8 +139,8 @@
   </node>
   <node concept="Az7Fb" id="7DyPfOhrmUD">
     <property role="3F6X1D" value="8818845203729051305" />
-    <property role="TrG5h" value="Date" />
-    <property role="FLfZY" value="^([0-2][0-9]|(3)[0-1])(\\/)(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$" />
+    <property role="TrG5h" value="DateMY" />
+    <property role="FLfZY" value="^(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$" />
     <property role="3GE5qa" value="Type System" />
   </node>
   <node concept="1TIwiD" id="74CaDYVii1">
@@ -417,7 +418,7 @@
     </node>
     <node concept="25R33" id="2QKgNYDxDH" role="25R1y">
       <property role="3tVfz5" value="51440707317406317" />
-      <property role="TrG5h" value="ELECRTICAL" />
+      <property role="TrG5h" value="ELECTRICAL" />
     </node>
     <node concept="25R33" id="2QKgNYDxDM" role="25R1y">
       <property role="3tVfz5" value="51440707317406322" />
@@ -504,7 +505,7 @@
     </node>
     <node concept="25R33" id="2QKgNYDxG7" role="25R1y">
       <property role="3tVfz5" value="51440707317406471" />
-      <property role="TrG5h" value="ROLLER_SHUTTERS" />
+      <property role="TrG5h" value="ROLLER_SHUTTER" />
     </node>
     <node concept="25R33" id="2QKgNYDxGc" role="25R1y">
       <property role="3tVfz5" value="51440707317406476" />
@@ -517,11 +518,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2QKgNYDxGj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="2QKgNYDxGl" role="1TKVEl">
-      <property role="IQ2nx" value="51440707317406485" />
-      <property role="TrG5h" value="doors" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="2QKgNYDxGn" role="1TKVEl">
       <property role="IQ2nx" value="51440707317406487" />

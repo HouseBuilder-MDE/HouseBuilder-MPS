@@ -38,7 +38,6 @@
       <concept id="2537194009606973930" name="HBML.structure.OuterSpace" flags="ng" index="1RUClC" />
       <concept id="51440707317406482" name="HBML.structure.Window" flags="ng" index="3Y4dCu">
         <property id="51440707317406490" name="height" index="3Y4dCm" />
-        <property id="51440707317406485" name="doors" index="3Y4dCp" />
         <property id="51440707317406487" name="width" index="3Y4dCr" />
       </concept>
       <concept id="51440707317406574" name="HBML.structure.Device" flags="ng" index="3Y4dDy">
@@ -76,7 +75,15 @@
     <property role="1F2ohh" value="Corso Mazzini 338B Scala A" />
     <property role="1F2lvf" value="Vasto" />
     <property role="1F2lva" value="66054" />
-    <property role="1F2ohi" value="07/05/2010" />
+    <property role="1F2ohi" value="05/2010" />
+    <node concept="1RS$qj" id="2cPV89kSBR$" role="1RPaL0">
+      <property role="TrG5h" value="Finestra del salotto" />
+      <property role="1RS$qg" value="2cPV89kPUBX/DOOR_WINDOW" />
+      <property role="1RS$ql" value="2.0" />
+      <property role="1RS$qm" value="2.4" />
+      <ref role="1RS$qe" node="2cPV89kStYJ" resolve="Salotto" />
+      <ref role="1RS$qc" node="2cPV89kS0oA" resolve="Balcone Principale" />
+    </node>
     <node concept="1F2lv0" id="2cPV89kS0o$" role="1F2luT">
       <property role="TrG5h" value="Terzo Piano" />
       <property role="1F2luZ" value="3" />
@@ -92,15 +99,9 @@
       <node concept="1Zaog_" id="2cPV89kStYJ" role="1ZaogB">
         <property role="TrG5h" value="Salotto" />
         <property role="1ZaogU" value="74CaDYViiz/LIVING_ROOM" />
-        <property role="1RS$ly" value="3.0" />
+        <property role="1RS$ly" value="2.8" />
         <property role="1Zaogw" value="8.4" />
         <property role="1RS$lx" value="6.2" />
-        <node concept="3Y4dCu" id="Qm4o1LAXM3" role="3Y4dEt">
-          <property role="TrG5h" value="finestra salotto" />
-          <property role="3Y4dCp" value="2" />
-          <property role="3Y4dCr" value="20.0" />
-          <property role="3Y4dCm" value="190.0" />
-        </node>
         <node concept="3Y4dDy" id="Qm4o1LAXMm" role="3Y4dDZ">
           <property role="3Y4dDX" value="2QKgNYDxG3/SOCKET" />
           <property role="TrG5h" value="Presa smart 1" />
@@ -113,15 +114,12 @@
           <property role="3Y4dDX" value="2QKgNYDxG7/ROLLER_SHUTTERS" />
           <property role="TrG5h" value="Tapparella Smart" />
         </node>
+        <node concept="3Y4dCu" id="6yNBuAuOl8B" role="3Y4dEt">
+          <property role="TrG5h" value="finestra salotto" />
+          <property role="3Y4dCr" value="2.4" />
+          <property role="3Y4dCm" value="2.2" />
+        </node>
       </node>
-    </node>
-    <node concept="1RS$qj" id="2cPV89kSBR$" role="1RPaL0">
-      <property role="TrG5h" value="Finestra del salotto" />
-      <property role="1RS$qg" value="2cPV89kPUBX/DOOR_WINDOW" />
-      <property role="1RS$ql" value="2.0" />
-      <property role="1RS$qm" value="2.4" />
-      <ref role="1RS$qe" node="2cPV89kStYJ" resolve="Salotto" />
-      <ref role="1RS$qc" node="2cPV89kS0oA" resolve="Balcone Principale" />
     </node>
     <node concept="3Y4dHe" id="Qm4o1LAXMR" role="XAcpl">
       <property role="TrG5h" value="Arduino" />

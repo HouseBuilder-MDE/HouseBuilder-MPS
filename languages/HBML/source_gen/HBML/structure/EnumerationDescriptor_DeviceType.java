@@ -18,11 +18,11 @@ public class EnumerationDescriptor_DeviceType extends EnumerationDescriptorBase 
   private final EnumerationDescriptor.MemberDescriptor myMember_THERMOSTAT_0 = new EnumerationDescriptor.MemberDescriptor("THERMOSTAT", "THERMOSTAT", 0xb6c10cfea61affL, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406463");
   private final EnumerationDescriptor.MemberDescriptor myMember_APPLIANCE_0 = new EnumerationDescriptor.MemberDescriptor("APPLIANCE", "APPLIANCE", 0xb6c10cfea61b00L, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406464");
   private final EnumerationDescriptor.MemberDescriptor myMember_SOCKET_0 = new EnumerationDescriptor.MemberDescriptor("SOCKET", "SOCKET", 0xb6c10cfea61b03L, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406467");
-  private final EnumerationDescriptor.MemberDescriptor myMember_ROLLER_SHUTTERS_0 = new EnumerationDescriptor.MemberDescriptor("ROLLER_SHUTTERS", "ROLLER_SHUTTERS", 0xb6c10cfea61b07L, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406471");
+  private final EnumerationDescriptor.MemberDescriptor myMember_ROLLER_SHUTTER_0 = new EnumerationDescriptor.MemberDescriptor("ROLLER_SHUTTER", "ROLLER_SHUTTER", 0xb6c10cfea61b07L, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406471");
   private final EnumerationDescriptor.MemberDescriptor myMember_GATE_0 = new EnumerationDescriptor.MemberDescriptor("GATE", "GATE", 0xb6c10cfea61b0cL, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406476");
 
   private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61afeL, 0xb6c10cfea61affL, 0xb6c10cfea61b00L, 0xb6c10cfea61b03L, 0xb6c10cfea61b07L, 0xb6c10cfea61b0cL);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_THERMOSTAT_0, myMember_APPLIANCE_0, myMember_SOCKET_0, myMember_ROLLER_SHUTTERS_0, myMember_GATE_0);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_THERMOSTAT_0, myMember_APPLIANCE_0, myMember_SOCKET_0, myMember_ROLLER_SHUTTER_0, myMember_GATE_0);
 
   @Nullable
   @Override
@@ -49,8 +49,8 @@ public class EnumerationDescriptor_DeviceType extends EnumerationDescriptorBase 
         return myMember_APPLIANCE_0;
       case "SOCKET":
         return myMember_SOCKET_0;
-      case "ROLLER_SHUTTERS":
-        return myMember_ROLLER_SHUTTERS_0;
+      case "ROLLER_SHUTTER":
+        return myMember_ROLLER_SHUTTER_0;
       case "GATE":
         return myMember_GATE_0;
     }

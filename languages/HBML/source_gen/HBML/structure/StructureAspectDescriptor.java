@@ -37,7 +37,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationOuterSpaceType = new EnumerationDescriptor_OuterSpaceType();
   /*package*/ final EnumerationDescriptor myEnumerationRoomType = new EnumerationDescriptor_RoomType();
   /*package*/ final EnumerationDescriptor myEnumerationSensorType = new EnumerationDescriptor_SensorType();
-  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeDate = new ConstrainedStringDatatypeDescriptorImpl(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116d6ea9L, "Date", "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/8818845203729051305", "^([0-2][0-9]|(3)[0-1])(\\/)(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$");
+  /*package*/ final ConstrainedStringDatatypeDescriptor myCSDatatypeDateMY = new ConstrainedStringDatatypeDescriptorImpl(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116d6ea9L, "DateMY", "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/8818845203729051305", "^(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$");
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -90,7 +90,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationActuatorType, myEnumerationDeviceType, myEnumerationDoorType, myEnumerationGroundType, myEnumerationOuterSpaceType, myEnumerationRoomType, myEnumerationSensorType, myCSDatatypeDate);
+    return Arrays.asList(myEnumerationActuatorType, myEnumerationDeviceType, myEnumerationDoorType, myEnumerationGroundType, myEnumerationOuterSpaceType, myEnumerationRoomType, myEnumerationSensorType, myCSDatatypeDateMY);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -221,7 +221,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406482");
     b.version(2);
-    b.property("doors", 0xb6c10cfea61b15L).type(PrimitiveTypeId.INTEGER).origin("51440707317406485").done();
     b.property("width", 0xb6c10cfea61b17L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("51440707317406487").done();
     b.property("height", 0xb6c10cfea61b1aL).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("51440707317406490").done();
     return b.create();

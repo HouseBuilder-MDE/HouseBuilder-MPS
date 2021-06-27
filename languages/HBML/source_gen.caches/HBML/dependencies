@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
   <dependency className="HBML.Language">
+    <classNode dependClassName="HBML.constraints.ConstraintsAspectDescriptor" />
+    <classNode dependClassName="HBML.constraints.GeneratedFeedbackAspectConstraints" />
+    <classNode dependClassName="HBML.constraints.GeneratedRulesConstraintsAspect" />
     <classNode dependClassName="HBML.editor.EditorAspectDescriptorImpl" />
     <classNode dependClassName="HBML.structure.ConceptPresentationAspectImpl" />
     <classNode dependClassName="HBML.structure.StructureAspectDescriptor" />
@@ -8,10 +11,13 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.util.Collection" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.RulesConstraintsAspect" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.api.FeedbackAspect" />
     <classNode dependClassName="jetbrains.mps.openapi.editor.descriptor.EditorAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.ids.SLanguageId" />
     <classNode dependClassName="jetbrains.mps.smodel.language.LanguageExtensions" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConceptPresentationAspect" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsAspectDescriptor" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ILanguageAspect" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.StructureAspectDescriptor" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />

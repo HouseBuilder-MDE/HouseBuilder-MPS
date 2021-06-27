@@ -19,7 +19,7 @@
       <unit at="10,0,50,0" name="HBML.structure.LanguageConceptSwitch" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <unit at="20,0,230,0" name="HBML.structure.StructureAspectDescriptor" />
+      <unit at="20,0,229,0" name="HBML.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/127403343607571585">
@@ -534,7 +534,7 @@
       <node id="51440707317406294" at="14,47,15,163" concept="9" />
       <node id="51440707317406295" at="18,0,19,0" concept="2" trace="myMember_IDRAULIC_0" />
       <node id="51440707317406313" at="19,0,20,0" concept="2" trace="myMember_PNEUMATIC_0" />
-      <node id="51440707317406317" at="20,0,21,0" concept="2" trace="myMember_ELECRTICAL_0" />
+      <node id="51440707317406317" at="20,0,21,0" concept="2" trace="myMember_ELECTRICAL_0" />
       <node id="51440707317406322" at="21,0,22,0" concept="2" trace="myMember_THERMAL_0" />
       <node id="51440707317406328" at="22,0,23,0" concept="2" trace="myMember_MECHANICAL_0" />
       <node id="51440707317406294" at="24,0,25,0" concept="2" trace="myIndex" />
@@ -697,7 +697,7 @@
       <node id="51440707317406463" at="18,0,19,0" concept="2" trace="myMember_THERMOSTAT_0" />
       <node id="51440707317406464" at="19,0,20,0" concept="2" trace="myMember_APPLIANCE_0" />
       <node id="51440707317406467" at="20,0,21,0" concept="2" trace="myMember_SOCKET_0" />
-      <node id="51440707317406471" at="21,0,22,0" concept="2" trace="myMember_ROLLER_SHUTTERS_0" />
+      <node id="51440707317406471" at="21,0,22,0" concept="2" trace="myMember_ROLLER_SHUTTER_0" />
       <node id="51440707317406476" at="22,0,23,0" concept="2" trace="myMember_GATE_0" />
       <node id="51440707317406462" at="24,0,25,0" concept="2" trace="myIndex" />
       <node id="51440707317406462" at="25,0,26,0" concept="2" trace="myMembers" />
@@ -707,7 +707,7 @@
       <node id="51440707317406463" at="46,24,47,37" concept="6" />
       <node id="51440707317406464" at="48,23,49,36" concept="6" />
       <node id="51440707317406467" at="50,20,51,33" concept="6" />
-      <node id="51440707317406471" at="52,29,53,42" concept="6" />
+      <node id="51440707317406471" at="52,28,53,41" concept="6" />
       <node id="51440707317406476" at="54,18,55,31" concept="6" />
       <node id="51440707317406462" at="56,5,57,16" concept="6" />
       <node id="51440707317406462" at="62,73,63,39" concept="5" />
@@ -728,7 +728,7 @@
       <scope id="51440707317406463" at="46,24,47,37" />
       <scope id="51440707317406464" at="48,23,49,36" />
       <scope id="51440707317406467" at="50,20,51,33" />
-      <scope id="51440707317406471" at="52,29,53,42" />
+      <scope id="51440707317406471" at="52,28,53,41" />
       <scope id="51440707317406476" at="54,18,55,31" />
       <scope id="51440707317406462" at="64,22,65,18" />
       <scope id="51440707317406462" at="14,0,17,0" />
@@ -775,16 +775,15 @@
       <node id="51440707317406482" at="220,34,221,71" concept="1" />
       <node id="51440707317406482" at="221,71,222,89" concept="1" />
       <node id="51440707317406482" at="222,89,223,17" concept="1" />
-      <node id="51440707317406485" at="223,17,224,108" concept="1" />
-      <node id="51440707317406487" at="224,108,225,167" concept="1" />
-      <node id="51440707317406490" at="225,167,226,168" concept="1" />
-      <node id="51440707317406482" at="226,168,227,22" concept="6" />
-      <node id="51440707317406482" at="218,0,229,0" concept="8" trace="createDescriptorForWindow#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <node id="51440707317406487" at="223,17,224,167" concept="1" />
+      <node id="51440707317406490" at="224,167,225,168" concept="1" />
+      <node id="51440707317406482" at="225,168,226,22" concept="6" />
+      <node id="51440707317406482" at="218,0,228,0" concept="8" trace="createDescriptorForWindow#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
       <scope id="51440707317406482" at="84,40,85,31" />
-      <scope id="51440707317406482" at="218,64,227,22">
+      <scope id="51440707317406482" at="218,64,226,22">
         <var name="b" id="51440707317406482" />
       </scope>
-      <scope id="51440707317406482" at="218,0,229,0" />
+      <scope id="51440707317406482" at="218,0,228,0" />
     </file>
   </root>
   <root nodeRef="r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406574">
@@ -904,7 +903,7 @@
   </root>
   <root nodeRef="r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/8818845203729051305">
     <file name="StructureAspectDescriptor.java">
-      <node id="8818845203729051305" at="40,0,41,0" concept="2" trace="myCSDatatypeDate" />
+      <node id="8818845203729051305" at="40,0,41,0" concept="2" trace="myCSDatatypeDateMY" />
     </file>
   </root>
 </debug-info>
