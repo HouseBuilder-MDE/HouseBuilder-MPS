@@ -157,6 +157,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("state", 0x7a62d4fd116b50aaL).type(PrimitiveTypeId.STRING).origin("8818845203728912554").done();
     b.property("address", 0x7a62d4fd116b50acL).type(PrimitiveTypeId.STRING).origin("8818845203728912556").done();
     b.property("city", 0x7a62d4fd116b8332L).type(PrimitiveTypeId.STRING).origin("8818845203728925490").done();
+    b.property("province", 0x62a4375eb58dc226L).type(PrimitiveTypeId.STRING).origin("7107866991809905190").done();
     b.property("postalCode", 0x7a62d4fd116b8337L).type(PrimitiveTypeId.STRING).origin("8818845203728925495").done();
     b.property("buildingDate", 0x7a62d4fd116b50afL).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116d6ea9L)).origin("8818845203728912559").done();
     b.aggregate("floors", 0x7a62d4fd116b8344L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116b833dL).optional(false).ordered(true).multiple(true).origin("8818845203728925508").done();
@@ -168,8 +169,11 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HBML", "OuterSpace", 0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254df69eaL);
     b.class_(false, false, false);
     b.super_("HBML.structure.Space", 0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2481L);
+    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/2537194009606973930");
     b.version(2);
+    b.property("type", 0x133753e11ae1f870L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7a9f2L)).origin("1384667636723480688").done();
+    b.property("group", 0x133753e11ae1f874L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7a9e9L)).origin("1384667636723480692").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPassage() {

@@ -17,6 +17,7 @@
         <child id="127403343607571597" name="spaces" index="1ZaogB" />
       </concept>
       <concept id="8818845203728912487" name="HBML.structure.House" flags="ng" index="1F2oiq">
+        <property id="7107866991809905190" name="province" index="3navlS" />
         <property id="8818845203728925495" name="postalCode" index="1F2lva" />
         <property id="8818845203728925490" name="city" index="1F2lvf" />
         <property id="8818845203728912556" name="address" index="1F2ohh" />
@@ -35,7 +36,10 @@
         <property id="2537194009606466071" name="height" index="1RS$ql" />
         <property id="2537194009606466068" name="width" index="1RS$qm" />
       </concept>
-      <concept id="2537194009606973930" name="HBML.structure.OuterSpace" flags="ng" index="1RUClC" />
+      <concept id="2537194009606973930" name="HBML.structure.OuterSpace" flags="ng" index="1RUClC">
+        <property id="1384667636723480688" name="type" index="9PEIh" />
+        <property id="1384667636723480692" name="group" index="9PEIl" />
+      </concept>
       <concept id="51440707317406482" name="HBML.structure.Window" flags="ng" index="3Y4dCu">
         <property id="51440707317406490" name="height" index="3Y4dCm" />
         <property id="51440707317406487" name="width" index="3Y4dCr" />
@@ -76,6 +80,7 @@
     <property role="1F2lvf" value="Vasto" />
     <property role="1F2lva" value="66054" />
     <property role="1F2ohi" value="05/2010" />
+    <property role="3navlS" value="Chieti" />
     <node concept="1RS$qj" id="2cPV89kSBR$" role="1RPaL0">
       <property role="TrG5h" value="Finestra del salotto" />
       <property role="1RS$qg" value="2cPV89kPUBX/DOOR_WINDOW" />
@@ -91,6 +96,8 @@
         <property role="TrG5h" value="Balcone Principale" />
         <property role="1Zaogw" value="6.7" />
         <property role="1RS$lx" value="5.6" />
+        <property role="9PEIh" value="2cPV89kPUBN/BALCONY" />
+        <property role="9PEIl" value="2cPV89kPUBI/PAVING" />
         <node concept="3Y4dDy" id="Qm4o1LAXLW" role="3Y4dDZ">
           <property role="TrG5h" value="Tapparella Smart" />
           <property role="3Y4dDX" value="2QKgNYDxG7/ROLLER_SHUTTERS" />
