@@ -709,7 +709,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="1cRkY4qTfDA" role="3EZMnx">
-        <property role="3F0ifm" value="device" />
+        <property role="3F0ifm" value="connected to device" />
       </node>
       <node concept="1iCGBv" id="1cRkY4qTfDB" role="3EZMnx">
         <ref role="1NtTu8" to="hq94:2QKgNYDxIn" resolve="device" />
@@ -984,7 +984,7 @@
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="1cRkY4qTfC_" role="3EZMnx">
-        <property role="3F0ifm" value="space" />
+        <property role="3F0ifm" value="in the space" />
       </node>
       <node concept="1iCGBv" id="1cRkY4qTfCA" role="3EZMnx">
         <ref role="1NtTu8" to="hq94:2QKgNYDxIf" resolve="space" />
@@ -1020,21 +1020,6 @@
         <node concept="3F0A7n" id="1cRkY4qTfCP" role="3EZMnx">
           <ref role="1NtTu8" to="hq94:2QKgNYDxE7" resolve="type" />
           <node concept="ljvvj" id="1cRkY4qTfCQ" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0ifn" id="1cRkY4qTfCR" role="3EZMnx">
-          <property role="3F0ifm" value="value" />
-        </node>
-        <node concept="3F0ifn" id="1cRkY4qTfCS" role="3EZMnx">
-          <property role="3F0ifm" value=":" />
-          <node concept="11L4FC" id="1cRkY4qTfCT" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0A7n" id="1cRkY4qTfCU" role="3EZMnx">
-          <ref role="1NtTu8" to="hq94:2QKgNYDxE9" resolve="value" />
-          <node concept="ljvvj" id="1cRkY4qTfCV" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
         </node>

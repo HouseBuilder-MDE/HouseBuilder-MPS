@@ -105,7 +105,7 @@
         <property role="9PEIh" value="2cPV89kPUBN/BALCONY" />
         <property role="9PEIl" value="2cPV89kPUBI/PAVING" />
         <node concept="3Y4dDy" id="Qm4o1LAXLW" role="3Y4dDZ">
-          <property role="TrG5h" value="Tapparella Smart" />
+          <property role="TrG5h" value="a" />
           <property role="3Y4dDX" value="2QKgNYDxG7/ROLLER_SHUTTERS" />
           <property role="9OVxp" value="Aio" />
         </node>
@@ -118,11 +118,11 @@
         <property role="1RS$lx" value="7.0" />
         <node concept="3Y4dDy" id="Qm4o1LAXMm" role="3Y4dDZ">
           <property role="3Y4dDX" value="2QKgNYDxG3/SOCKET" />
-          <property role="TrG5h" value="Presa smart 1" />
+          <property role="TrG5h" value="P" />
           <property role="9OVxp" value="Aukey" />
         </node>
         <node concept="3Y4dDy" id="Qm4o1LAXMo" role="3Y4dDZ">
-          <property role="TrG5h" value="Presa smart 2" />
+          <property role="TrG5h" value="p" />
           <property role="3Y4dDX" value="2QKgNYDxG3/SOCKET" />
           <property role="9OVxp" value="Aukey" />
         </node>
@@ -148,7 +148,7 @@
         <property role="TrG5h" value="FTVOGUE" />
         <property role="3Y4dH6" value="2QKgNYDxDH/ELECRTICAL" />
         <property role="9OVxk" value="Caspberry" />
-        <ref role="3Y4dEr" node="Qm4o1LAXLW" resolve="Tapparella Smart" />
+        <ref role="3Y4dEr" node="Qm4o1LAXMr" resolve="Tapparella Smart" />
       </node>
       <node concept="3Y4dI8" id="Qm4o1LAXMT" role="XAcp8">
         <property role="TrG5h" value="Netatmo" />

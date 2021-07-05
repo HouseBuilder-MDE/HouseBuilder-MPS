@@ -27,8 +27,9 @@ public final class Window_ConstraintRules extends BaseRulesConstraintsDescriptor
   public static final Rule<ContainmentContext> check_id7107866991810085852 = new Rule_MinWidth();
   public static final Rule<ContainmentContext> check_id7107866991810091464 = new Rule_MinHeight();
   public static final Rule<ContainmentContext> check_id7544547427493378146 = new Rule_MaxHeight();
+  public static final Rule<ContainmentContext> check_id1384667636724114224 = new Rule_minDoorsNumber();
 
-  private static final List<Rule<?>> RULES = Collections.unmodifiableList(Arrays.<Rule<?>>asList(check_id7107866991810085852, check_id7107866991810091464, check_id7544547427493378146));
+  private static final List<Rule<?>> RULES = Collections.unmodifiableList(Arrays.<Rule<?>>asList(check_id7107866991810085852, check_id7107866991810091464, check_id7544547427493378146, check_id1384667636724114224));
 
   @NotNull
   @Override
@@ -93,6 +94,25 @@ public final class Window_ConstraintRules extends BaseRulesConstraintsDescriptor
     }
   }
 
+  public static final class Rule_minDoorsNumber extends BaseRule<ContainmentContext> {
+    private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:9834744c-9584-43dc-a442-45d197c7349c(HBML.constraints)/1384667636724114224");
+    public static final RuleId ID_minDoorsNumber = new RuleId(1384667636724114224L, SOURCE_NODE_REF);
+
+    public Rule_minDoorsNumber() {
+      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_minDoorsNumber, SOURCE_NODE_REF);
+    }
+
+    @Override
+    public boolean check(@NotNull ContainmentContext context) {
+      return SPropertyOperations.getInteger(context.getChildNode(), PROPS.doorsNumber$ZiNX) >= 1;
+    }
+
+    @Override
+    public boolean appliesTo(@NotNull ContainmentContext context) {
+      return true;
+    }
+  }
+
   /*package*/ Window_ConstraintRules() {
     super(CONCEPT);
   }
@@ -101,6 +121,7 @@ public final class Window_ConstraintRules extends BaseRulesConstraintsDescriptor
     /*package*/ static final SProperty width$7qAL = MetaAdapterFactory.getProperty(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L, 0xb6c10cfea61b17L, "width");
     /*package*/ static final SProperty height$7wf9 = MetaAdapterFactory.getProperty(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L, 0xb6c10cfea61b1aL, "height");
     /*package*/ static final SProperty height$QRoz = MetaAdapterFactory.getProperty(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed248fL, 0x2335ec8254d7a9e0L, "height");
+    /*package*/ static final SProperty doorsNumber$ZiNX = MetaAdapterFactory.getProperty(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L, 0x133753e11ae4ebc6L, "doorsNumber");
   }
 
   private static final class CONCEPTS {

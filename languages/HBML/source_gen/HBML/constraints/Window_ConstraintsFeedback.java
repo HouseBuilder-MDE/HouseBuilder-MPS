@@ -40,8 +40,15 @@ public final class Window_ConstraintsFeedback extends BaseFeedbackDescriptor {
       return new MessageProvider.StringMsg("Window height must be lower than the room height" + "");
     }
   };
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_d9ns06_d = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Window_ConstraintRules.Rule_minDoorsNumber.ID_minDoorsNumber)) {
+    @NotNull
+    @Override
+    public MessageProvider.Msg yieldMessage(ContainmentContext context) {
+      return new MessageProvider.StringMsg("numbers of doors must be a numbner grather than 0");
+    }
+  };
 
-  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenConstraintRuleFails_d9ns06_a, MSGPROVIDER_WhenConstraintRuleFails_d9ns06_b, MSGPROVIDER_WhenConstraintRuleFails_d9ns06_c));
+  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenConstraintRuleFails_d9ns06_a, MSGPROVIDER_WhenConstraintRuleFails_d9ns06_b, MSGPROVIDER_WhenConstraintRuleFails_d9ns06_c, MSGPROVIDER_WhenConstraintRuleFails_d9ns06_d));
 
   public Window_ConstraintsFeedback() {
     super(CONCEPT);

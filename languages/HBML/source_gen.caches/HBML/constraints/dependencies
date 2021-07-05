@@ -1,5 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
+  <dependency className="HBML.constraints.Actuator_ConstraintRules">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.BaseRule" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.Rule" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.RuleId" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.kinds.PredefinedRuleKinds" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SReferenceLink" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.constraints.rules.BaseRulesConstraintsDescriptor" />
+  </dependency>
+  <dependency className="HBML.constraints.Actuator_ConstraintsFeedback">
+    <classNode dependClassName="HBML.constraints.Actuator_ConstraintRules" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.util.Arrays" />
+    <classNode dependClassName="java.util.Collections" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="java.util.stream.Stream" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.api.FeedbackProvider" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.BaseMessageProvider" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.FailingRuleProblemId" />
+    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.MessageProvider" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
+    <classNode extendsClassName="jetbrains.mps.core.aspects.feedback.api.BaseFeedbackDescriptor" />
+  </dependency>
   <dependency className="HBML.constraints.ConstraintsAspectDescriptor">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.smodel.runtime.ConstraintsDescriptor" />
@@ -45,6 +84,7 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.feedback.api.BaseFeedbackDescriptor" />
   </dependency>
   <dependency className="HBML.constraints.GeneratedFeedbackAspectConstraints">
+    <classNode dependClassName="HBML.constraints.Actuator_ConstraintsFeedback" />
     <classNode dependClassName="HBML.constraints.Door_ConstraintsFeedback" />
     <classNode dependClassName="HBML.constraints.Room_ConstraintsFeedback" />
     <classNode dependClassName="HBML.constraints.Space_ConstraintsFeedback" />
@@ -56,6 +96,7 @@
     <classNode extendsClassName="jetbrains.mps.core.aspects.feedback.api.FeedbackAspect" />
   </dependency>
   <dependency className="HBML.constraints.GeneratedRulesConstraintsAspect">
+    <classNode dependClassName="HBML.constraints.Actuator_ConstraintRules" />
     <classNode dependClassName="HBML.constraints.Door_ConstraintRules" />
     <classNode dependClassName="HBML.constraints.Room_ConstraintRules" />
     <classNode dependClassName="HBML.constraints.Space_ConstraintRules" />
