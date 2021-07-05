@@ -355,6 +355,19 @@
     <property role="EcuMT" value="2537194009606973930" />
     <property role="TrG5h" value="OuterSpace" />
     <ref role="1TJDcQ" node="74CaDYVii1" resolve="Space" />
+    <node concept="1TJgyi" id="1cRkY4qSvxK" role="1TKVEl">
+      <property role="IQ2nx" value="1384667636723480688" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="2cPV89kPUBM" resolve="OuterSpaceType" />
+    </node>
+    <node concept="1TJgyi" id="1cRkY4qSvxO" role="1TKVEl">
+      <property role="IQ2nx" value="1384667636723480692" />
+      <property role="TrG5h" value="group" />
+      <ref role="AX2Wp" node="2cPV89kPUBD" resolve="GroundType" />
+    </node>
+    <node concept="PrWs8" id="1cRkY4qSvxM" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2QKgNYDxD2">
     <property role="EcuMT" value="51440707317406274" />
