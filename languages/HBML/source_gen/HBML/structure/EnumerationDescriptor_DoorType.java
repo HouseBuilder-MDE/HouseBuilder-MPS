@@ -26,7 +26,7 @@ public class EnumerationDescriptor_DoorType extends EnumerationDescriptorBase {
   @Nullable
   @Override
   public EnumerationDescriptor.MemberDescriptor getDefault() {
-    return null;
+    return myMember_SIMPLE_0;
   }
 
   @NotNull

@@ -24,14 +24,54 @@ import org.jetbrains.mps.openapi.language.SConcept;
 public final class Window_ConstraintRules extends BaseRulesConstraintsDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L, "HBML.structure.Window");
 
+  public static final Rule<ContainmentContext> check_id7107866991810085852 = new Rule_MinWidth();
+  public static final Rule<ContainmentContext> check_id7107866991810091464 = new Rule_MinHeight();
   public static final Rule<ContainmentContext> check_id7544547427493378146 = new Rule_MaxHeight();
 
-  private static final List<Rule<?>> RULES = Collections.unmodifiableList(Arrays.<Rule<?>>asList(check_id7544547427493378146));
+  private static final List<Rule<?>> RULES = Collections.unmodifiableList(Arrays.<Rule<?>>asList(check_id7107866991810085852, check_id7107866991810091464, check_id7544547427493378146));
 
   @NotNull
   @Override
   public List<Rule<?>> getDeclaredRules() {
     return RULES;
+  }
+
+  public static final class Rule_MinWidth extends BaseRule<ContainmentContext> {
+    private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:9834744c-9584-43dc-a442-45d197c7349c(HBML.constraints)/7107866991810085852");
+    public static final RuleId ID_MinWidth = new RuleId(7107866991810085852L, SOURCE_NODE_REF);
+
+    public Rule_MinWidth() {
+      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_MinWidth, SOURCE_NODE_REF);
+    }
+
+    @Override
+    public boolean check(@NotNull ContainmentContext context) {
+      return Float.parseFloat(SPropertyOperations.getString(context.getChildNode(), PROPS.width$7qAL)) > 0.0;
+    }
+
+    @Override
+    public boolean appliesTo(@NotNull ContainmentContext context) {
+      return true;
+    }
+  }
+
+  public static final class Rule_MinHeight extends BaseRule<ContainmentContext> {
+    private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:9834744c-9584-43dc-a442-45d197c7349c(HBML.constraints)/7107866991810091464");
+    public static final RuleId ID_MinHeight = new RuleId(7107866991810091464L, SOURCE_NODE_REF);
+
+    public Rule_MinHeight() {
+      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_MinHeight, SOURCE_NODE_REF);
+    }
+
+    @Override
+    public boolean check(@NotNull ContainmentContext context) {
+      return Float.parseFloat(SPropertyOperations.getString(context.getChildNode(), PROPS.height$7wf9)) > 0.0;
+    }
+
+    @Override
+    public boolean appliesTo(@NotNull ContainmentContext context) {
+      return true;
+    }
   }
 
   public static final class Rule_MaxHeight extends BaseRule<ContainmentContext> {
@@ -58,6 +98,7 @@ public final class Window_ConstraintRules extends BaseRulesConstraintsDescriptor
   }
 
   private static final class PROPS {
+    /*package*/ static final SProperty width$7qAL = MetaAdapterFactory.getProperty(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L, 0xb6c10cfea61b17L, "width");
     /*package*/ static final SProperty height$7wf9 = MetaAdapterFactory.getProperty(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L, 0xb6c10cfea61b1aL, "height");
     /*package*/ static final SProperty height$QRoz = MetaAdapterFactory.getProperty(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed248fL, 0x2335ec8254d7a9e0L, "height");
   }

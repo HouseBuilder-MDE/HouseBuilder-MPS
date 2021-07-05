@@ -15,6 +15,7 @@ public class EnumerationDescriptor_RoomType extends EnumerationDescriptorBase {
     super(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2492L, "RoomType", "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/127403343607571602");
   }
 
+  private final EnumerationDescriptor.MemberDescriptor myMember_SIMPLE_0 = new EnumerationDescriptor.MemberDescriptor("SIMPLE", "SIMPLE", 0x133753e11ae6964eL, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/1384667636723783246");
   private final EnumerationDescriptor.MemberDescriptor myMember_KITCHEN_0 = new EnumerationDescriptor.MemberDescriptor("KITCHEN", "KITCHEN", 0x1c4a0aa7eed2493L, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/127403343607571603");
   private final EnumerationDescriptor.MemberDescriptor myMember_BATHROOM_0 = new EnumerationDescriptor.MemberDescriptor("BATHROOM", "BATHROOM", 0x1c4a0aa7eed2494L, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/127403343607571604");
   private final EnumerationDescriptor.MemberDescriptor myMember_LIVING_ROOM_0 = new EnumerationDescriptor.MemberDescriptor("LIVING_ROOM", "LIVING_ROOM", 0x1c4a0aa7eed24a3L, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/127403343607571619");
@@ -30,13 +31,13 @@ public class EnumerationDescriptor_RoomType extends EnumerationDescriptorBase {
   private final EnumerationDescriptor.MemberDescriptor myMember_LUNCHROOOM_0 = new EnumerationDescriptor.MemberDescriptor("LUNCHROOOM", "LUNCHROOOM", 0x2335ec8254d7a9c3L, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/2537194009606465987");
   private final EnumerationDescriptor.MemberDescriptor myMember_STAIRS_0 = new EnumerationDescriptor.MemberDescriptor("STAIRS", "STAIRS", 0x2335ec8254d7a9d1L, "r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/2537194009606466001");
 
-  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2492L, 0x1c4a0aa7eed2493L, 0x1c4a0aa7eed2494L, 0x1c4a0aa7eed24a3L, 0x1c4a0aa7eed249bL, 0x1c4a0aa7eed24a8L, 0x1c4a0aa7eed24aeL, 0x2335ec8254d7a984L, 0x2335ec8254d7a98cL, 0x2335ec8254d7a995L, 0x2335ec8254d7a99fL, 0x2335ec8254d7a9aaL, 0x2335ec8254d7a9b6L, 0x2335ec8254d7a9c3L, 0x2335ec8254d7a9d1L);
-  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_KITCHEN_0, myMember_BATHROOM_0, myMember_LIVING_ROOM_0, myMember_BEDROOM_0, myMember_HALWAY_0, myMember_ENTRANCE_0, myMember_STUDY_0, myMember_STORAGE_ROOM_0, myMember_GARAGE_0, myMember_LAUNDRY_ROOM_0, myMember_HOBBY_ROOM_0, myMember_CELLAR_0, myMember_LUNCHROOOM_0, myMember_STAIRS_0);
+  private final EnumerationLiteralsIndex myIndex = EnumerationLiteralsIndex.build(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2492L, 0x133753e11ae6964eL, 0x1c4a0aa7eed2493L, 0x1c4a0aa7eed2494L, 0x1c4a0aa7eed24a3L, 0x1c4a0aa7eed249bL, 0x1c4a0aa7eed24a8L, 0x1c4a0aa7eed24aeL, 0x2335ec8254d7a984L, 0x2335ec8254d7a98cL, 0x2335ec8254d7a995L, 0x2335ec8254d7a99fL, 0x2335ec8254d7a9aaL, 0x2335ec8254d7a9b6L, 0x2335ec8254d7a9c3L, 0x2335ec8254d7a9d1L);
+  private final List<EnumerationDescriptor.MemberDescriptor> myMembers = new EnumerationDescriptorBase.MembersList(myIndex, myMember_SIMPLE_0, myMember_KITCHEN_0, myMember_BATHROOM_0, myMember_LIVING_ROOM_0, myMember_BEDROOM_0, myMember_HALWAY_0, myMember_ENTRANCE_0, myMember_STUDY_0, myMember_STORAGE_ROOM_0, myMember_GARAGE_0, myMember_LAUNDRY_ROOM_0, myMember_HOBBY_ROOM_0, myMember_CELLAR_0, myMember_LUNCHROOOM_0, myMember_STAIRS_0);
 
   @Nullable
   @Override
   public EnumerationDescriptor.MemberDescriptor getDefault() {
-    return null;
+    return myMember_SIMPLE_0;
   }
 
   @NotNull
@@ -52,6 +53,8 @@ public class EnumerationDescriptor_RoomType extends EnumerationDescriptorBase {
       return null;
     }
     switch (memberName) {
+      case "SIMPLE":
+        return myMember_SIMPLE_0;
       case "KITCHEN":
         return myMember_KITCHEN_0;
       case "BATHROOM":

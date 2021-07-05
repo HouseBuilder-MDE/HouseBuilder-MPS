@@ -38,25 +38,31 @@
       </concept>
       <concept id="2537194009606973930" name="HBML.structure.OuterSpace" flags="ng" index="1RUClC">
         <property id="1384667636723480688" name="type" index="9PEIh" />
-        <property id="1384667636723480692" name="group" index="9PEIl" />
+        <property id="1384667636723480692" name="groundType" index="9PEIl" />
       </concept>
       <concept id="51440707317406482" name="HBML.structure.Window" flags="ng" index="3Y4dCu">
+        <property id="1384667636723674054" name="doorsNumber" index="9OVwB" />
         <property id="51440707317406490" name="height" index="3Y4dCm" />
         <property id="51440707317406487" name="width" index="3Y4dCr" />
       </concept>
       <concept id="51440707317406574" name="HBML.structure.Device" flags="ng" index="3Y4dDy">
+        <property id="1384667636723674040" name="model" index="9OVxp" />
         <property id="51440707317406577" name="type" index="3Y4dDX" />
       </concept>
       <concept id="51440707317406279" name="HBML.structure.Actuator" flags="ng" index="3Y4dHb">
+        <property id="1384667636723674037" name="model" index="9OVxk" />
         <property id="51440707317406282" name="type" index="3Y4dH6" />
         <reference id="51440707317406615" name="device" index="3Y4dEr" />
       </concept>
       <concept id="51440707317406274" name="HBML.structure.Controller" flags="ng" index="3Y4dHe">
+        <property id="1384667636723674043" name="os" index="9OVxq" />
+        <property id="1384667636723674046" name="osVersion" index="9OVxv" />
         <property id="51440707317406277" name="model" index="3Y4dH9" />
         <child id="1807070609521035117" name="sensors" index="XAcp8" />
         <child id="51440707317406501" name="actuators" index="3Y4dCD" />
       </concept>
       <concept id="51440707317406340" name="HBML.structure.Sensor" flags="ng" index="3Y4dI8">
+        <property id="1384667636723674050" name="model" index="9OVwz" />
         <property id="51440707317406345" name="value" index="3Y4dI5" />
         <property id="51440707317406343" name="type" index="3Y4dIb" />
         <reference id="51440707317406607" name="space" index="3Y4dE3" />
@@ -101,45 +107,54 @@
         <node concept="3Y4dDy" id="Qm4o1LAXLW" role="3Y4dDZ">
           <property role="TrG5h" value="Tapparella Smart" />
           <property role="3Y4dDX" value="2QKgNYDxG7/ROLLER_SHUTTERS" />
+          <property role="9OVxp" value="Aio" />
         </node>
       </node>
       <node concept="1Zaog_" id="2cPV89kStYJ" role="1ZaogB">
         <property role="TrG5h" value="Salotto" />
         <property role="1ZaogU" value="74CaDYViiz/LIVING_ROOM" />
         <property role="1RS$ly" value="2.8" />
-        <property role="1Zaogw" value="8.4" />
-        <property role="1RS$lx" value="6.2" />
+        <property role="1Zaogw" value="6.0" />
+        <property role="1RS$lx" value="7.0" />
         <node concept="3Y4dDy" id="Qm4o1LAXMm" role="3Y4dDZ">
           <property role="3Y4dDX" value="2QKgNYDxG3/SOCKET" />
           <property role="TrG5h" value="Presa smart 1" />
+          <property role="9OVxp" value="Aukey" />
         </node>
         <node concept="3Y4dDy" id="Qm4o1LAXMo" role="3Y4dDZ">
           <property role="TrG5h" value="Presa smart 2" />
           <property role="3Y4dDX" value="2QKgNYDxG3/SOCKET" />
+          <property role="9OVxp" value="Aukey" />
         </node>
         <node concept="3Y4dDy" id="Qm4o1LAXMr" role="3Y4dDZ">
           <property role="3Y4dDX" value="2QKgNYDxG7/ROLLER_SHUTTERS" />
           <property role="TrG5h" value="Tapparella Smart" />
+          <property role="9OVxp" value="Aio" />
         </node>
         <node concept="3Y4dCu" id="6yNBuAuOl8B" role="3Y4dEt">
           <property role="TrG5h" value="finestra salotto" />
           <property role="3Y4dCr" value="2.4" />
           <property role="3Y4dCm" value="2.2" />
+          <property role="9OVwB" value="3" />
         </node>
       </node>
     </node>
     <node concept="3Y4dHe" id="Qm4o1LAXMR" role="XAcpl">
       <property role="TrG5h" value="Arduino" />
       <property role="3Y4dH9" value="MKR WIFI 1010" />
+      <property role="9OVxq" value="Simba" />
+      <property role="9OVxv" value="2.0" />
       <node concept="3Y4dHb" id="Qm4o1LAXMS" role="3Y4dCD">
         <property role="TrG5h" value="FTVOGUE" />
         <property role="3Y4dH6" value="2QKgNYDxDH/ELECRTICAL" />
+        <property role="9OVxk" value="Caspberry" />
         <ref role="3Y4dEr" node="Qm4o1LAXLW" resolve="Tapparella Smart" />
       </node>
       <node concept="3Y4dI8" id="Qm4o1LAXMT" role="XAcp8">
         <property role="TrG5h" value="Netatmo" />
         <property role="3Y4dIb" value="2QKgNYDxFJ/SMOKE" />
         <property role="3Y4dI5" value="0.0" />
+        <property role="9OVwz" value="Caspberry" />
         <ref role="3Y4dE3" node="2cPV89kStYJ" resolve="Salotto" />
       </node>
     </node>

@@ -177,7 +177,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/2537194009606973930");
     b.version(2);
     b.property("type", 0x133753e11ae1f870L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7a9f2L)).origin("1384667636723480688").done();
-    b.property("group", 0x133753e11ae1f874L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7a9e9L)).origin("1384667636723480692").done();
+    b.property("groundType", 0x133753e11ae1f874L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7a9e9L)).origin("1384667636723480692").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPassage() {

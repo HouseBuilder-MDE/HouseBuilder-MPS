@@ -13,68 +13,357 @@
       <unit at="10,0,17,0" name="HBML.constraints.GeneratedFeedbackAspectConstraints" />
     </file>
     <file name="GeneratedRulesConstraintsAspect.java">
-      <unit at="14,0,28,0" name="HBML.constraints.GeneratedRulesConstraintsAspect" />
+      <unit at="14,0,34,0" name="HBML.constraints.GeneratedRulesConstraintsAspect" />
+    </file>
+  </root>
+  <root nodeRef="r:9834744c-9584-43dc-a442-45d197c7349c(HBML.constraints)/7107866991810094945">
+    <file name="Space_ConstraintRules.java">
+      <node id="7107866991810094945" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="7107866991810097459" at="25,0,26,0" concept="3" trace="check_id7107866991810097459" />
+      <node id="7107866991810094949" at="26,0,27,0" concept="3" trace="check_id7107866991810094949" />
+      <node id="7107866991810094945" at="28,0,29,0" concept="3" trace="RULES" />
+      <node id="7107866991810094945" at="32,43,33,17" concept="2" />
+      <node id="7107866991810097459" at="37,0,38,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7107866991810097459" at="38,0,39,0" concept="3" trace="ID_MinWidth" />
+      <node id="7107866991810097459" at="40,28,41,85" concept="4" />
+      <node id="7107866991810097459" at="45,63,46,109" concept="2" />
+      <node id="7107866991810097459" at="50,67,51,18" concept="2" />
+      <node id="7107866991810094949" at="56,0,57,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7107866991810094949" at="57,0,58,0" concept="3" trace="ID_MinLength" />
+      <node id="7107866991810094949" at="59,29,60,86" concept="4" />
+      <node id="7107866991810094949" at="64,63,65,110" concept="2" />
+      <node id="7107866991810094949" at="69,67,70,18" concept="2" />
+      <node id="7107866991810094945" at="74,39,75,19" concept="4" />
+      <node id="7107866991810094945" at="79,0,80,0" concept="3" trace="width$QROD" />
+      <node id="7107866991810094945" at="80,0,81,0" concept="3" trace="length$56Ca" />
+      <node id="7107866991810097459" at="40,0,43,0" concept="0" trace="Rule_MinWidth#()V" />
+      <node id="7107866991810094949" at="59,0,62,0" concept="0" trace="Rule_MinLength#()V" />
+      <node id="7107866991810094945" at="74,0,77,0" concept="0" trace="Space_ConstraintRules#()V" />
+      <node id="7107866991810097459" at="44,0,48,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810097459" at="49,0,53,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810094949" at="63,0,67,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810094949" at="68,0,72,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810094945" at="30,0,35,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="7107866991810094945" at="32,43,33,17" />
+      <scope id="7107866991810097459" at="40,28,41,85" />
+      <scope id="7107866991810097459" at="45,63,46,109" />
+      <scope id="7107866991810097459" at="50,67,51,18" />
+      <scope id="7107866991810094949" at="59,29,60,86" />
+      <scope id="7107866991810094949" at="64,63,65,110" />
+      <scope id="7107866991810094949" at="69,67,70,18" />
+      <scope id="7107866991810094945" at="74,39,75,19" />
+      <scope id="7107866991810097459" at="40,0,43,0" />
+      <scope id="7107866991810094949" at="59,0,62,0" />
+      <scope id="7107866991810094945" at="74,0,77,0" />
+      <scope id="7107866991810097459" at="44,0,48,0">
+        <var name="context" id="7107866991810097459" />
+      </scope>
+      <scope id="7107866991810097459" at="49,0,53,0">
+        <var name="context" id="7107866991810097459" />
+      </scope>
+      <scope id="7107866991810094949" at="63,0,67,0">
+        <var name="context" id="7107866991810094949" />
+      </scope>
+      <scope id="7107866991810094949" at="68,0,72,0">
+        <var name="context" id="7107866991810094949" />
+      </scope>
+      <scope id="7107866991810094945" at="30,0,35,0" />
+      <unit id="7107866991810094945" at="78,0,82,0" name="HBML.constraints.Space_ConstraintRules$PROPS" />
+      <unit id="7107866991810097459" at="36,0,54,0" name="HBML.constraints.Space_ConstraintRules$Rule_MinWidth" />
+      <unit id="7107866991810094949" at="55,0,73,0" name="HBML.constraints.Space_ConstraintRules$Rule_MinLength" />
+      <unit id="7107866991810094945" at="22,0,83,0" name="HBML.constraints.Space_ConstraintRules" />
+    </file>
+    <file name="Space_ConstraintsFeedback.java">
+      <node id="7107866991810094945" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="7107866991810097458" at="25,73,26,84" concept="2" />
+      <node id="7107866991810094948" at="32,73,33,85" concept="2" />
+      <node id="7107866991810094945" at="37,0,38,0" concept="3" trace="PROVIDERS" />
+      <node id="7107866991810094945" at="39,38,40,19" concept="4" />
+      <node id="7107866991810094945" at="45,58,46,30" concept="2" />
+      <node id="7107866991810094945" at="39,0,42,0" concept="0" trace="Space_ConstraintsFeedback#()V" />
+      <node id="7107866991810097458" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="7107866991810094948" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="7107866991810094945" at="43,0,48,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="7107866991810097458" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_aerzox_a" />
+      <node id="7107866991810094948" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_aerzox_b" />
+      <scope id="7107866991810097458" at="25,73,26,84" />
+      <scope id="7107866991810094948" at="32,73,33,85" />
+      <scope id="7107866991810094945" at="39,38,40,19" />
+      <scope id="7107866991810094945" at="45,58,46,30" />
+      <scope id="7107866991810094945" at="39,0,42,0" />
+      <scope id="7107866991810097458" at="23,0,28,0">
+        <var name="context" id="7107866991810097458" />
+      </scope>
+      <scope id="7107866991810094948" at="30,0,35,0">
+        <var name="context" id="7107866991810094948" />
+      </scope>
+      <scope id="7107866991810094945" at="43,0,48,0" />
+      <unit id="7107866991810097458" at="22,111,28,3" name="HBML.constraints.Space_ConstraintsFeedback$1" />
+      <unit id="7107866991810094948" at="29,111,35,3" name="HBML.constraints.Space_ConstraintsFeedback$2" />
+      <unit id="7107866991810094945" at="19,0,49,0" name="HBML.constraints.Space_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:9834744c-9584-43dc-a442-45d197c7349c(HBML.constraints)/7107866991810098528">
+    <file name="Room_ConstraintRules.java">
+      <node id="7107866991810098528" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="7107866991810098532" at="25,0,26,0" concept="3" trace="check_id7107866991810098532" />
+      <node id="7107866991810098528" at="27,0,28,0" concept="3" trace="RULES" />
+      <node id="7107866991810098528" at="31,43,32,17" concept="2" />
+      <node id="7107866991810098532" at="36,0,37,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7107866991810098532" at="37,0,38,0" concept="3" trace="ID_MinHeight" />
+      <node id="7107866991810098532" at="39,29,40,86" concept="4" />
+      <node id="7107866991810098532" at="44,63,45,110" concept="2" />
+      <node id="7107866991810098532" at="49,67,50,18" concept="2" />
+      <node id="7107866991810098528" at="54,38,55,19" concept="4" />
+      <node id="7107866991810098528" at="59,0,60,0" concept="3" trace="height$QRoz" />
+      <node id="7107866991810098532" at="39,0,42,0" concept="0" trace="Rule_MinHeight#()V" />
+      <node id="7107866991810098528" at="54,0,57,0" concept="0" trace="Room_ConstraintRules#()V" />
+      <node id="7107866991810098532" at="43,0,47,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810098532" at="48,0,52,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810098528" at="29,0,34,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="7107866991810098528" at="31,43,32,17" />
+      <scope id="7107866991810098532" at="39,29,40,86" />
+      <scope id="7107866991810098532" at="44,63,45,110" />
+      <scope id="7107866991810098532" at="49,67,50,18" />
+      <scope id="7107866991810098528" at="54,38,55,19" />
+      <scope id="7107866991810098532" at="39,0,42,0" />
+      <scope id="7107866991810098528" at="54,0,57,0" />
+      <scope id="7107866991810098532" at="43,0,47,0">
+        <var name="context" id="7107866991810098532" />
+      </scope>
+      <scope id="7107866991810098532" at="48,0,52,0">
+        <var name="context" id="7107866991810098532" />
+      </scope>
+      <scope id="7107866991810098528" at="29,0,34,0" />
+      <unit id="7107866991810098528" at="58,0,61,0" name="HBML.constraints.Room_ConstraintRules$PROPS" />
+      <unit id="7107866991810098532" at="35,0,53,0" name="HBML.constraints.Room_ConstraintRules$Rule_MinHeight" />
+      <unit id="7107866991810098528" at="22,0,62,0" name="HBML.constraints.Room_ConstraintRules" />
+    </file>
+    <file name="Room_ConstraintsFeedback.java">
+      <node id="7107866991810098528" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="7107866991810098531" at="25,73,26,84" concept="2" />
+      <node id="7107866991810098528" at="30,0,31,0" concept="3" trace="PROVIDERS" />
+      <node id="7107866991810098528" at="32,37,33,19" concept="4" />
+      <node id="7107866991810098528" at="38,58,39,30" concept="2" />
+      <node id="7107866991810098528" at="32,0,35,0" concept="0" trace="Room_ConstraintsFeedback#()V" />
+      <node id="7107866991810098531" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="7107866991810098528" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="7107866991810098531" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_nfu81n_a" />
+      <scope id="7107866991810098531" at="25,73,26,84" />
+      <scope id="7107866991810098528" at="32,37,33,19" />
+      <scope id="7107866991810098528" at="38,58,39,30" />
+      <scope id="7107866991810098528" at="32,0,35,0" />
+      <scope id="7107866991810098531" at="23,0,28,0">
+        <var name="context" id="7107866991810098531" />
+      </scope>
+      <scope id="7107866991810098528" at="36,0,41,0" />
+      <unit id="7107866991810098531" at="22,111,28,3" name="HBML.constraints.Room_ConstraintsFeedback$1" />
+      <unit id="7107866991810098528" at="19,0,42,0" name="HBML.constraints.Room_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:9834744c-9584-43dc-a442-45d197c7349c(HBML.constraints)/7107866991810099588">
+    <file name="Door_ConstraintRules.java">
+      <node id="7107866991810099588" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="7107866991810101049" at="25,0,26,0" concept="3" trace="check_id7107866991810101049" />
+      <node id="7107866991810099592" at="26,0,27,0" concept="3" trace="check_id7107866991810099592" />
+      <node id="7107866991810099588" at="28,0,29,0" concept="3" trace="RULES" />
+      <node id="7107866991810099588" at="32,43,33,17" concept="2" />
+      <node id="7107866991810101049" at="37,0,38,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7107866991810101049" at="38,0,39,0" concept="3" trace="ID_MinWidth" />
+      <node id="7107866991810101049" at="40,28,41,85" concept="4" />
+      <node id="7107866991810101049" at="45,63,46,109" concept="2" />
+      <node id="7107866991810101049" at="50,67,51,18" concept="2" />
+      <node id="7107866991810099592" at="56,0,57,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7107866991810099592" at="57,0,58,0" concept="3" trace="ID_MinHeight" />
+      <node id="7107866991810099592" at="59,29,60,86" concept="4" />
+      <node id="7107866991810099592" at="64,63,65,110" concept="2" />
+      <node id="7107866991810099592" at="69,67,70,18" concept="2" />
+      <node id="7107866991810099588" at="74,38,75,19" concept="4" />
+      <node id="7107866991810099588" at="79,0,80,0" concept="3" trace="width$q68J" />
+      <node id="7107866991810099588" at="80,0,81,0" concept="3" trace="height$qbL7" />
+      <node id="7107866991810101049" at="40,0,43,0" concept="0" trace="Rule_MinWidth#()V" />
+      <node id="7107866991810099592" at="59,0,62,0" concept="0" trace="Rule_MinHeight#()V" />
+      <node id="7107866991810099588" at="74,0,77,0" concept="0" trace="Door_ConstraintRules#()V" />
+      <node id="7107866991810101049" at="44,0,48,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810101049" at="49,0,53,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810099592" at="63,0,67,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810099592" at="68,0,72,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810099588" at="30,0,35,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="7107866991810099588" at="32,43,33,17" />
+      <scope id="7107866991810101049" at="40,28,41,85" />
+      <scope id="7107866991810101049" at="45,63,46,109" />
+      <scope id="7107866991810101049" at="50,67,51,18" />
+      <scope id="7107866991810099592" at="59,29,60,86" />
+      <scope id="7107866991810099592" at="64,63,65,110" />
+      <scope id="7107866991810099592" at="69,67,70,18" />
+      <scope id="7107866991810099588" at="74,38,75,19" />
+      <scope id="7107866991810101049" at="40,0,43,0" />
+      <scope id="7107866991810099592" at="59,0,62,0" />
+      <scope id="7107866991810099588" at="74,0,77,0" />
+      <scope id="7107866991810101049" at="44,0,48,0">
+        <var name="context" id="7107866991810101049" />
+      </scope>
+      <scope id="7107866991810101049" at="49,0,53,0">
+        <var name="context" id="7107866991810101049" />
+      </scope>
+      <scope id="7107866991810099592" at="63,0,67,0">
+        <var name="context" id="7107866991810099592" />
+      </scope>
+      <scope id="7107866991810099592" at="68,0,72,0">
+        <var name="context" id="7107866991810099592" />
+      </scope>
+      <scope id="7107866991810099588" at="30,0,35,0" />
+      <unit id="7107866991810099588" at="78,0,82,0" name="HBML.constraints.Door_ConstraintRules$PROPS" />
+      <unit id="7107866991810101049" at="36,0,54,0" name="HBML.constraints.Door_ConstraintRules$Rule_MinWidth" />
+      <unit id="7107866991810099592" at="55,0,73,0" name="HBML.constraints.Door_ConstraintRules$Rule_MinHeight" />
+      <unit id="7107866991810099588" at="22,0,83,0" name="HBML.constraints.Door_ConstraintRules" />
+    </file>
+    <file name="Door_ConstraintsFeedback.java">
+      <node id="7107866991810099588" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="7107866991810101048" at="25,73,26,83" concept="2" />
+      <node id="7107866991810099591" at="32,73,33,84" concept="2" />
+      <node id="7107866991810099588" at="37,0,38,0" concept="3" trace="PROVIDERS" />
+      <node id="7107866991810099588" at="39,37,40,19" concept="4" />
+      <node id="7107866991810099588" at="45,58,46,30" concept="2" />
+      <node id="7107866991810099588" at="39,0,42,0" concept="0" trace="Door_ConstraintsFeedback#()V" />
+      <node id="7107866991810101048" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="7107866991810099591" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="7107866991810099588" at="43,0,48,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="7107866991810101048" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_4f4grp_a" />
+      <node id="7107866991810099591" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_4f4grp_b" />
+      <scope id="7107866991810101048" at="25,73,26,83" />
+      <scope id="7107866991810099591" at="32,73,33,84" />
+      <scope id="7107866991810099588" at="39,37,40,19" />
+      <scope id="7107866991810099588" at="45,58,46,30" />
+      <scope id="7107866991810099588" at="39,0,42,0" />
+      <scope id="7107866991810101048" at="23,0,28,0">
+        <var name="context" id="7107866991810101048" />
+      </scope>
+      <scope id="7107866991810099591" at="30,0,35,0">
+        <var name="context" id="7107866991810099591" />
+      </scope>
+      <scope id="7107866991810099588" at="43,0,48,0" />
+      <unit id="7107866991810101048" at="22,111,28,3" name="HBML.constraints.Door_ConstraintsFeedback$1" />
+      <unit id="7107866991810099591" at="29,111,35,3" name="HBML.constraints.Door_ConstraintsFeedback$2" />
+      <unit id="7107866991810099588" at="19,0,49,0" name="HBML.constraints.Door_ConstraintsFeedback" />
     </file>
   </root>
   <root nodeRef="r:9834744c-9584-43dc-a442-45d197c7349c(HBML.constraints)/7544547427493376478">
     <file name="Window_ConstraintRules.java">
       <node id="7544547427493376478" at="25,0,26,0" concept="3" trace="CONCEPT" />
-      <node id="7544547427493378146" at="27,0,28,0" concept="3" trace="check_id7544547427493378146" />
-      <node id="7544547427493376478" at="29,0,30,0" concept="3" trace="RULES" />
-      <node id="7544547427493376478" at="33,43,34,17" concept="2" />
-      <node id="7544547427493378146" at="38,0,39,0" concept="3" trace="SOURCE_NODE_REF" />
-      <node id="7544547427493378146" at="39,0,40,0" concept="3" trace="ID_MaxHeight" />
-      <node id="7544547427493378146" at="41,29,42,86" concept="4" />
-      <node id="7544547427493378146" at="46,63,47,263" concept="2" />
-      <node id="7544547427493378146" at="51,67,52,18" concept="2" />
-      <node id="7544547427493376478" at="56,40,57,19" concept="4" />
-      <node id="7544547427493376478" at="61,0,62,0" concept="3" trace="height$7wf9" />
-      <node id="7544547427493376478" at="62,0,63,0" concept="3" trace="height$QRoz" />
-      <node id="7544547427493376478" at="66,0,67,0" concept="3" trace="Room$fW" />
-      <node id="7544547427493378146" at="41,0,44,0" concept="0" trace="Rule_MaxHeight#()V" />
-      <node id="7544547427493376478" at="56,0,59,0" concept="0" trace="Window_ConstraintRules#()V" />
-      <node id="7544547427493378146" at="45,0,49,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
-      <node id="7544547427493378146" at="50,0,54,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
-      <node id="7544547427493376478" at="31,0,36,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
-      <scope id="7544547427493376478" at="33,43,34,17" />
-      <scope id="7544547427493378146" at="41,29,42,86" />
-      <scope id="7544547427493378146" at="46,63,47,263" />
-      <scope id="7544547427493378146" at="51,67,52,18" />
-      <scope id="7544547427493376478" at="56,40,57,19" />
-      <scope id="7544547427493378146" at="41,0,44,0" />
-      <scope id="7544547427493376478" at="56,0,59,0" />
-      <scope id="7544547427493378146" at="45,0,49,0">
+      <node id="7107866991810085852" at="27,0,28,0" concept="3" trace="check_id7107866991810085852" />
+      <node id="7107866991810091464" at="28,0,29,0" concept="3" trace="check_id7107866991810091464" />
+      <node id="7544547427493378146" at="29,0,30,0" concept="3" trace="check_id7544547427493378146" />
+      <node id="7544547427493376478" at="31,0,32,0" concept="3" trace="RULES" />
+      <node id="7544547427493376478" at="35,43,36,17" concept="2" />
+      <node id="7107866991810085852" at="40,0,41,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7107866991810085852" at="41,0,42,0" concept="3" trace="ID_MinWidth" />
+      <node id="7107866991810085852" at="43,28,44,85" concept="4" />
+      <node id="7107866991810085852" at="48,63,49,109" concept="2" />
+      <node id="7107866991810085852" at="53,67,54,18" concept="2" />
+      <node id="7107866991810091464" at="59,0,60,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7107866991810091464" at="60,0,61,0" concept="3" trace="ID_MinHeight" />
+      <node id="7107866991810091464" at="62,29,63,86" concept="4" />
+      <node id="7107866991810091464" at="67,63,68,110" concept="2" />
+      <node id="7107866991810091464" at="72,67,73,18" concept="2" />
+      <node id="7544547427493378146" at="78,0,79,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7544547427493378146" at="79,0,80,0" concept="3" trace="ID_MaxHeight" />
+      <node id="7544547427493378146" at="81,29,82,86" concept="4" />
+      <node id="7544547427493378146" at="86,63,87,263" concept="2" />
+      <node id="7544547427493378146" at="91,67,92,18" concept="2" />
+      <node id="7544547427493376478" at="96,40,97,19" concept="4" />
+      <node id="7544547427493376478" at="101,0,102,0" concept="3" trace="width$7qAL" />
+      <node id="7544547427493376478" at="102,0,103,0" concept="3" trace="height$7wf9" />
+      <node id="7544547427493376478" at="103,0,104,0" concept="3" trace="height$QRoz" />
+      <node id="7544547427493376478" at="107,0,108,0" concept="3" trace="Room$fW" />
+      <node id="7107866991810085852" at="43,0,46,0" concept="0" trace="Rule_MinWidth#()V" />
+      <node id="7107866991810091464" at="62,0,65,0" concept="0" trace="Rule_MinHeight#()V" />
+      <node id="7544547427493378146" at="81,0,84,0" concept="0" trace="Rule_MaxHeight#()V" />
+      <node id="7544547427493376478" at="96,0,99,0" concept="0" trace="Window_ConstraintRules#()V" />
+      <node id="7107866991810085852" at="47,0,51,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810085852" at="52,0,56,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810091464" at="66,0,70,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7107866991810091464" at="71,0,75,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7544547427493378146" at="85,0,89,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7544547427493378146" at="90,0,94,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7544547427493376478" at="33,0,38,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="7544547427493376478" at="35,43,36,17" />
+      <scope id="7107866991810085852" at="43,28,44,85" />
+      <scope id="7107866991810085852" at="48,63,49,109" />
+      <scope id="7107866991810085852" at="53,67,54,18" />
+      <scope id="7107866991810091464" at="62,29,63,86" />
+      <scope id="7107866991810091464" at="67,63,68,110" />
+      <scope id="7107866991810091464" at="72,67,73,18" />
+      <scope id="7544547427493378146" at="81,29,82,86" />
+      <scope id="7544547427493378146" at="86,63,87,263" />
+      <scope id="7544547427493378146" at="91,67,92,18" />
+      <scope id="7544547427493376478" at="96,40,97,19" />
+      <scope id="7107866991810085852" at="43,0,46,0" />
+      <scope id="7107866991810091464" at="62,0,65,0" />
+      <scope id="7544547427493378146" at="81,0,84,0" />
+      <scope id="7544547427493376478" at="96,0,99,0" />
+      <scope id="7107866991810085852" at="47,0,51,0">
+        <var name="context" id="7107866991810085852" />
+      </scope>
+      <scope id="7107866991810085852" at="52,0,56,0">
+        <var name="context" id="7107866991810085852" />
+      </scope>
+      <scope id="7107866991810091464" at="66,0,70,0">
+        <var name="context" id="7107866991810091464" />
+      </scope>
+      <scope id="7107866991810091464" at="71,0,75,0">
+        <var name="context" id="7107866991810091464" />
+      </scope>
+      <scope id="7544547427493378146" at="85,0,89,0">
         <var name="context" id="7544547427493378146" />
       </scope>
-      <scope id="7544547427493378146" at="50,0,54,0">
+      <scope id="7544547427493378146" at="90,0,94,0">
         <var name="context" id="7544547427493378146" />
       </scope>
-      <scope id="7544547427493376478" at="31,0,36,0" />
-      <unit id="7544547427493376478" at="65,0,68,0" name="HBML.constraints.Window_ConstraintRules$CONCEPTS" />
-      <unit id="7544547427493376478" at="60,0,64,0" name="HBML.constraints.Window_ConstraintRules$PROPS" />
-      <unit id="7544547427493378146" at="37,0,55,0" name="HBML.constraints.Window_ConstraintRules$Rule_MaxHeight" />
-      <unit id="7544547427493376478" at="24,0,69,0" name="HBML.constraints.Window_ConstraintRules" />
+      <scope id="7544547427493376478" at="33,0,38,0" />
+      <unit id="7544547427493376478" at="106,0,109,0" name="HBML.constraints.Window_ConstraintRules$CONCEPTS" />
+      <unit id="7544547427493376478" at="100,0,105,0" name="HBML.constraints.Window_ConstraintRules$PROPS" />
+      <unit id="7107866991810085852" at="39,0,57,0" name="HBML.constraints.Window_ConstraintRules$Rule_MinWidth" />
+      <unit id="7107866991810091464" at="58,0,76,0" name="HBML.constraints.Window_ConstraintRules$Rule_MinHeight" />
+      <unit id="7544547427493378146" at="77,0,95,0" name="HBML.constraints.Window_ConstraintRules$Rule_MaxHeight" />
+      <unit id="7544547427493376478" at="24,0,110,0" name="HBML.constraints.Window_ConstraintRules" />
     </file>
     <file name="Window_ConstraintsFeedback.java">
       <node id="7544547427493376478" at="20,0,21,0" concept="3" trace="CONCEPT" />
-      <node id="7544547427493378145" at="25,73,26,95" concept="2" />
-      <node id="7544547427493376478" at="30,0,31,0" concept="3" trace="PROVIDERS" />
-      <node id="7544547427493376478" at="32,39,33,19" concept="4" />
-      <node id="7544547427493376478" at="38,58,39,30" concept="2" />
-      <node id="7544547427493376478" at="32,0,35,0" concept="0" trace="Window_ConstraintsFeedback#()V" />
-      <node id="7544547427493378145" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
-      <node id="7544547427493376478" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
-      <node id="7544547427493378145" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_d9ns06_a" />
-      <scope id="7544547427493378145" at="25,73,26,95" />
-      <scope id="7544547427493376478" at="32,39,33,19" />
-      <scope id="7544547427493376478" at="38,58,39,30" />
-      <scope id="7544547427493376478" at="32,0,35,0" />
-      <scope id="7544547427493378145" at="23,0,28,0">
+      <node id="7107866991810085850" at="25,73,26,85" concept="2" />
+      <node id="7107866991810091463" at="32,73,33,86" concept="2" />
+      <node id="7544547427493378145" at="39,73,40,100" concept="2" />
+      <node id="7544547427493376478" at="44,0,45,0" concept="3" trace="PROVIDERS" />
+      <node id="7544547427493376478" at="46,39,47,19" concept="4" />
+      <node id="7544547427493376478" at="52,58,53,30" concept="2" />
+      <node id="7544547427493376478" at="46,0,49,0" concept="0" trace="Window_ConstraintsFeedback#()V" />
+      <node id="7107866991810085850" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="7107866991810091463" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="7544547427493378145" at="37,0,42,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="7544547427493376478" at="50,0,55,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="7107866991810085850" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_d9ns06_a" />
+      <node id="7107866991810091463" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_d9ns06_b" />
+      <node id="7544547427493378145" at="36,0,43,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_d9ns06_c" />
+      <scope id="7107866991810085850" at="25,73,26,85" />
+      <scope id="7107866991810091463" at="32,73,33,86" />
+      <scope id="7544547427493378145" at="39,73,40,100" />
+      <scope id="7544547427493376478" at="46,39,47,19" />
+      <scope id="7544547427493376478" at="52,58,53,30" />
+      <scope id="7544547427493376478" at="46,0,49,0" />
+      <scope id="7107866991810085850" at="23,0,28,0">
+        <var name="context" id="7107866991810085850" />
+      </scope>
+      <scope id="7107866991810091463" at="30,0,35,0">
+        <var name="context" id="7107866991810091463" />
+      </scope>
+      <scope id="7544547427493378145" at="37,0,42,0">
         <var name="context" id="7544547427493378145" />
       </scope>
-      <scope id="7544547427493376478" at="36,0,41,0" />
-      <unit id="7544547427493378145" at="22,111,28,3" name="HBML.constraints.Window_ConstraintsFeedback$1" />
-      <unit id="7544547427493376478" at="19,0,42,0" name="HBML.constraints.Window_ConstraintsFeedback" />
+      <scope id="7544547427493376478" at="50,0,55,0" />
+      <unit id="7107866991810085850" at="22,111,28,3" name="HBML.constraints.Window_ConstraintsFeedback$1" />
+      <unit id="7107866991810091463" at="29,111,35,3" name="HBML.constraints.Window_ConstraintsFeedback$2" />
+      <unit id="7544547427493378145" at="36,111,42,3" name="HBML.constraints.Window_ConstraintsFeedback$3" />
+      <unit id="7544547427493376478" at="19,0,56,0" name="HBML.constraints.Window_ConstraintsFeedback" />
     </file>
   </root>
 </debug-info>

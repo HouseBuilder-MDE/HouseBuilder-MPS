@@ -18,10 +18,16 @@ public final class GeneratedRulesConstraintsAspect implements RulesConstraintsAs
     SAbstractConcept cncpt = concept;
     switch (conceptIndex.index(cncpt)) {
       case 0:
+        return new Door_ConstraintRules();
+      case 1:
+        return new Room_ConstraintRules();
+      case 2:
+        return new Space_ConstraintRules();
+      case 3:
         return new Window_ConstraintRules();
       default:
     }
     return null;
   }
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7aa11L), MetaIdFactory.conceptId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed248fL), MetaIdFactory.conceptId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2481L), MetaIdFactory.conceptId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L)).seal();
 }

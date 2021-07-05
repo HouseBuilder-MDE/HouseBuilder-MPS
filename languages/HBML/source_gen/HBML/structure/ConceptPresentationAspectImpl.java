@@ -46,6 +46,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Device:
         if (props_Device == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Device that can be to an Actuator");
           cpb.presentationByName();
           props_Device = cpb.create();
         }
@@ -77,6 +78,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.OuterSpace:
         if (props_OuterSpace == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("OuterSpace from the house, e.g. Garden, Balcony, etc");
           cpb.presentationByName();
           props_OuterSpace = cpb.create();
         }
@@ -115,6 +117,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Window:
         if (props_Window == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.shortDesc("Generic Window that does not correspond to a passage.");
           cpb.presentationByName();
           props_Window = cpb.create();
         }

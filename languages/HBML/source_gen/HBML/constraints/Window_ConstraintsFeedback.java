@@ -19,15 +19,29 @@ import java.util.stream.Stream;
 public final class Window_ConstraintsFeedback extends BaseFeedbackDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b12L, "HBML.structure.Window");
 
-  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_d9ns06_a = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Window_ConstraintRules.Rule_MaxHeight.ID_MaxHeight)) {
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_d9ns06_a = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Window_ConstraintRules.Rule_MinWidth.ID_MinWidth)) {
     @NotNull
     @Override
     public MessageProvider.Msg yieldMessage(ContainmentContext context) {
-      return new MessageProvider.StringMsg("Window height must be lower than the room height");
+      return new MessageProvider.StringMsg("Window width must be a positive number");
+    }
+  };
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_d9ns06_b = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Window_ConstraintRules.Rule_MinHeight.ID_MinHeight)) {
+    @NotNull
+    @Override
+    public MessageProvider.Msg yieldMessage(ContainmentContext context) {
+      return new MessageProvider.StringMsg("Window height must be a positive number");
+    }
+  };
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_d9ns06_c = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Window_ConstraintRules.Rule_MaxHeight.ID_MaxHeight)) {
+    @NotNull
+    @Override
+    public MessageProvider.Msg yieldMessage(ContainmentContext context) {
+      return new MessageProvider.StringMsg("Window height must be lower than the room height" + "");
     }
   };
 
-  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenConstraintRuleFails_d9ns06_a));
+  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenConstraintRuleFails_d9ns06_a, MSGPROVIDER_WhenConstraintRuleFails_d9ns06_b, MSGPROVIDER_WhenConstraintRuleFails_d9ns06_c));
 
   public Window_ConstraintsFeedback() {
     super(CONCEPT);

@@ -33,6 +33,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
+      <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -105,6 +109,70 @@
     <ref role="3Oh7Pe" to="hq94:2QKgNYDxGi" resolve="Window" />
     <node concept="3OnDbq" id="6yNBuAuP7xv" role="3Oh7Pb">
       <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
+      <node concept="1DCEPf" id="6a$dPUP$8fq" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6a$dPUP$8fs" role="2j4cqI">
+          <property role="EcuMT" value="7107866991810085852" />
+          <property role="TrG5h" value="MinWidth" />
+          <node concept="2K0Yjh" id="6a$dPUP$8fu" role="2K0Fuo">
+            <node concept="3eOSWO" id="6a$dPUP$9v5" role="2K0yoH">
+              <node concept="3b6qkQ" id="6a$dPUP$9vS" role="3uHU7w">
+                <property role="$nhwW" value="0.0" />
+              </node>
+              <node concept="2YIFZM" id="6a$dPUP$8vm" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="6a$dPUP$8M8" role="37wK5m">
+                  <node concept="3QpRc$" id="6a$dPUP$8AE" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="6a$dPUP$ahr" role="2OqNvi">
+                    <ref role="3TsBF5" to="hq94:2QKgNYDxGn" resolve="width" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6a$dPUP$8fy" role="1DCEQI">
+          <node concept="16I2mz" id="6a$dPUP$9B3" role="16N$OO">
+            <node concept="16N$OT" id="6a$dPUP$9B4" role="16I2mt">
+              <property role="16N$OU" value="Window width must be a positive number" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="6a$dPUP$9B7" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6a$dPUP$9B8" role="2j4cqI">
+          <property role="EcuMT" value="7107866991810091464" />
+          <property role="TrG5h" value="MinHeight" />
+          <node concept="2K0Yjh" id="6a$dPUP$9B9" role="2K0Fuo">
+            <node concept="3eOSWO" id="6a$dPUP$9Ba" role="2K0yoH">
+              <node concept="3b6qkQ" id="6a$dPUP$9Bb" role="3uHU7w">
+                <property role="$nhwW" value="0.0" />
+              </node>
+              <node concept="2YIFZM" id="6a$dPUP$9Bc" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="6a$dPUP$9Bd" role="37wK5m">
+                  <node concept="3QpRc$" id="6a$dPUP$9Be" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="6a$dPUP$9Bf" role="2OqNvi">
+                    <ref role="3TsBF5" to="hq94:2QKgNYDxGq" resolve="height" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6a$dPUP$9Bg" role="1DCEQI">
+          <node concept="16I2mz" id="6a$dPUP$9Bh" role="16N$OO">
+            <node concept="16N$OT" id="6a$dPUP$9Bi" role="16I2mt">
+              <property role="16N$OU" value="Window height must be a positive number" />
+            </node>
+          </node>
+        </node>
+      </node>
       <node concept="1DCEPf" id="6yNBuAuP7xx" role="3OnDbr">
         <node concept="3Qq5Rn" id="6yNBuAuP7xy" role="2j4cqI">
           <property role="EcuMT" value="7544547427493378146" />
@@ -149,8 +217,189 @@
         </node>
         <node concept="1DCEQD" id="6yNBuAuP7x_" role="1DCEQI">
           <node concept="16I2mz" id="6yNBuAuP9ND" role="16N$OO">
-            <node concept="16N$OT" id="6yNBuAuP9NE" role="16I2mt">
+            <node concept="16N$OT" id="6a$dPUP$81I" role="16I2mt">
               <property role="16N$OU" value="Window height must be lower than the room height" />
+            </node>
+            <node concept="16N$OT" id="6a$dPUP$81L" role="16I2mt">
+              <property role="16N$OU" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3Oh7Pa" id="6a$dPUP$atx">
+    <ref role="3Oh7Pe" to="hq94:74CaDYVii1" resolve="Space" />
+    <node concept="3OnDbq" id="6a$dPUP$aty" role="3Oh7Pb">
+      <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
+      <node concept="1DCEPf" id="6a$dPUP$b4M" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6a$dPUP$b4N" role="2j4cqI">
+          <property role="EcuMT" value="7107866991810097459" />
+          <property role="TrG5h" value="MinWidth" />
+          <node concept="2K0Yjh" id="6a$dPUP$b4O" role="2K0Fuo">
+            <node concept="3eOSWO" id="6a$dPUP$b4P" role="2K0yoH">
+              <node concept="3b6qkQ" id="6a$dPUP$b4Q" role="3uHU7w">
+                <property role="$nhwW" value="0.0" />
+              </node>
+              <node concept="2YIFZM" id="6a$dPUP$b4R" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="6a$dPUP$b4S" role="37wK5m">
+                  <node concept="3QpRc$" id="6a$dPUP$b4T" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="6a$dPUP$bf9" role="2OqNvi">
+                    <ref role="3TsBF5" to="hq94:2cPV89kPUBz" resolve="width" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6a$dPUP$b4U" role="1DCEQI">
+          <node concept="16I2mz" id="6a$dPUP$b4V" role="16N$OO">
+            <node concept="16N$OT" id="6a$dPUP$b4W" role="16I2mt">
+              <property role="16N$OU" value="Space width must be a positive number" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="6a$dPUP$at$" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6a$dPUP$at_" role="2j4cqI">
+          <property role="EcuMT" value="7107866991810094949" />
+          <property role="TrG5h" value="MinLength" />
+          <node concept="2K0Yjh" id="6a$dPUP$atA" role="2K0Fuo">
+            <node concept="3eOSWO" id="6a$dPUP$atB" role="2K0yoH">
+              <node concept="3b6qkQ" id="6a$dPUP$atC" role="3uHU7w">
+                <property role="$nhwW" value="0.0" />
+              </node>
+              <node concept="2YIFZM" id="6a$dPUP$atD" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="6a$dPUP$atE" role="37wK5m">
+                  <node concept="3QpRc$" id="6a$dPUP$atF" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="6a$dPUP$b3e" role="2OqNvi">
+                    <ref role="3TsBF5" to="hq94:74CaDYViia" resolve="length" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6a$dPUP$atG" role="1DCEQI">
+          <node concept="16I2mz" id="6a$dPUP$atH" role="16N$OO">
+            <node concept="16N$OT" id="6a$dPUP$atI" role="16I2mt">
+              <property role="16N$OU" value="Space length must be a positive number" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3Oh7Pa" id="6a$dPUP$blw">
+    <ref role="3Oh7Pe" to="hq94:74CaDYViif" resolve="Room" />
+    <node concept="3OnDbq" id="6a$dPUP$blx" role="3Oh7Pb">
+      <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
+      <node concept="1DCEPf" id="6a$dPUP$blz" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6a$dPUP$bl$" role="2j4cqI">
+          <property role="EcuMT" value="7107866991810098532" />
+          <property role="TrG5h" value="MinHeight" />
+          <node concept="2K0Yjh" id="6a$dPUP$bl_" role="2K0Fuo">
+            <node concept="3eOSWO" id="6a$dPUP$blA" role="2K0yoH">
+              <node concept="3b6qkQ" id="6a$dPUP$blB" role="3uHU7w">
+                <property role="$nhwW" value="0.0" />
+              </node>
+              <node concept="2YIFZM" id="6a$dPUP$blC" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="6a$dPUP$blD" role="37wK5m">
+                  <node concept="3QpRc$" id="6a$dPUP$blE" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="6a$dPUP$8Y8" role="2OqNvi">
+                    <ref role="3TsBF5" to="hq94:2cPV89kPUBw" resolve="height" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6a$dPUP$blF" role="1DCEQI">
+          <node concept="16I2mz" id="6a$dPUP$blG" role="16N$OO">
+            <node concept="16N$OT" id="6a$dPUP$blH" role="16I2mt">
+              <property role="16N$OU" value="Room height must be a positive number" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3Oh7Pa" id="6a$dPUP$bA4">
+    <ref role="3Oh7Pe" to="hq94:2cPV89kPUCh" resolve="Door" />
+    <node concept="3OnDbq" id="6a$dPUP$bA5" role="3Oh7Pb">
+      <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
+      <node concept="1DCEPf" id="6a$dPUP$bWS" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6a$dPUP$bWT" role="2j4cqI">
+          <property role="EcuMT" value="7107866991810101049" />
+          <property role="TrG5h" value="MinWidth" />
+          <node concept="2K0Yjh" id="6a$dPUP$bWU" role="2K0Fuo">
+            <node concept="3eOSWO" id="6a$dPUP$bWV" role="2K0yoH">
+              <node concept="3b6qkQ" id="6a$dPUP$bWW" role="3uHU7w">
+                <property role="$nhwW" value="0.0" />
+              </node>
+              <node concept="2YIFZM" id="6a$dPUP$bWX" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="6a$dPUP$bWY" role="37wK5m">
+                  <node concept="3QpRc$" id="6a$dPUP$bWZ" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="6a$dPUP$cbY" role="2OqNvi">
+                    <ref role="3TsBF5" to="hq94:2cPV89kPUCk" resolve="width" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6a$dPUP$bX1" role="1DCEQI">
+          <node concept="16I2mz" id="6a$dPUP$bX2" role="16N$OO">
+            <node concept="16N$OT" id="6a$dPUP$bX3" role="16I2mt">
+              <property role="16N$OU" value="Door width must be a positive number" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="6a$dPUP$bA7" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6a$dPUP$bA8" role="2j4cqI">
+          <property role="EcuMT" value="7107866991810099592" />
+          <property role="TrG5h" value="MinHeight" />
+          <node concept="2K0Yjh" id="6a$dPUP$bA9" role="2K0Fuo">
+            <node concept="3eOSWO" id="6a$dPUP$bAa" role="2K0yoH">
+              <node concept="3b6qkQ" id="6a$dPUP$bAb" role="3uHU7w">
+                <property role="$nhwW" value="0.0" />
+              </node>
+              <node concept="2YIFZM" id="6a$dPUP$bAc" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~Float.parseFloat(java.lang.String)" resolve="parseFloat" />
+                <ref role="1Pybhc" to="wyt6:~Float" resolve="Float" />
+                <node concept="2OqwBi" id="6a$dPUP$bAd" role="37wK5m">
+                  <node concept="3QpRc$" id="6a$dPUP$bAe" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="6a$dPUP$bAf" role="2OqNvi">
+                    <ref role="3TsBF5" to="hq94:2cPV89kPUCn" resolve="height" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6a$dPUP$bAg" role="1DCEQI">
+          <node concept="16I2mz" id="6a$dPUP$bAh" role="16N$OO">
+            <node concept="16N$OT" id="6a$dPUP$bAi" role="16I2mt">
+              <property role="16N$OU" value="Door height must be a positive number" />
             </node>
           </node>
         </node>
