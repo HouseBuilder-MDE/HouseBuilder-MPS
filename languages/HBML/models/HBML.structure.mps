@@ -16,6 +16,7 @@
         <property id="1421157252384165432" name="memberId" index="3tVfz5" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
@@ -202,6 +203,11 @@
     <property role="3F6X1D" value="127403343607571602" />
     <property role="TrG5h" value="RoomType" />
     <property role="3GE5qa" value="Type System" />
+    <ref role="1H5jkz" node="1cRkY4qTDpe" resolve="SIMPLE" />
+    <node concept="25R33" id="1cRkY4qTDpe" role="25R1y">
+      <property role="3tVfz5" value="1384667636723783246" />
+      <property role="TrG5h" value="SIMPLE" />
+    </node>
     <node concept="25R33" id="74CaDYViij" role="25R1y">
       <property role="3tVfz5" value="127403343607571603" />
       <property role="TrG5h" value="KITCHEN" />
@@ -297,6 +303,7 @@
     <property role="3F6X1D" value="2537194009606466043" />
     <property role="3GE5qa" value="Type System" />
     <property role="TrG5h" value="DoorType" />
+    <ref role="1H5jkz" node="2cPV89kPUBW" resolve="SIMPLE" />
     <node concept="25R33" id="2cPV89kPUBW" role="25R1y">
       <property role="3tVfz5" value="2537194009606466044" />
       <property role="TrG5h" value="SIMPLE" />
