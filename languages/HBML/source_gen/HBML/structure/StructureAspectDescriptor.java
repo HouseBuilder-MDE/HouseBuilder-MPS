@@ -104,6 +104,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406279");
     b.version(2);
     b.property("type", 0xb6c10cfea61a4aL).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a56L)).origin("51440707317406282").done();
+    b.property("model", 0x133753e11ae4ebb5L).type(PrimitiveTypeId.STRING).origin("1384667636723674037").done();
     b.associate("device", 0xb6c10cfea61b97L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b6eL).optional(false).origin("51440707317406615").done();
     return b.create();
   }
@@ -114,6 +115,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406274");
     b.version(2);
     b.property("model", 0xb6c10cfea61a45L).type(PrimitiveTypeId.STRING).origin("51440707317406277").done();
+    b.property("os", 0x133753e11ae4ebbbL).type(PrimitiveTypeId.STRING).origin("1384667636723674043").done();
+    b.property("osVersion", 0x133753e11ae4ebbeL).type(PrimitiveTypeId.STRING).origin("1384667636723674046").done();
     b.aggregate("actuators", 0xb6c10cfea61b25L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a47L).optional(false).ordered(true).multiple(true).origin("51440707317406501").done();
     b.aggregate("sensors", 0x19140125248cc76dL).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a84L).optional(false).ordered(true).multiple(true).origin("1807070609521035117").done();
     return b.create();
@@ -125,6 +128,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/51440707317406574");
     b.version(2);
     b.property("type", 0xb6c10cfea61b71L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61afeL)).origin("51440707317406577").done();
+    b.property("model", 0x133753e11ae4ebb8L).type(PrimitiveTypeId.STRING).origin("1384667636723674040").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForDoor() {
@@ -205,6 +209,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("type", 0xb6c10cfea61a87L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61adbL)).origin("51440707317406343").done();
     b.property("value", 0xb6c10cfea61a89L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("51440707317406345").done();
+    b.property("model", 0x133753e11ae4ebc2L).type(PrimitiveTypeId.STRING).origin("1384667636723674050").done();
     b.associate("space", 0xb6c10cfea61b8fL).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2481L).optional(false).origin("51440707317406607").done();
     return b.create();
   }
@@ -227,6 +232,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("width", 0xb6c10cfea61b17L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("51440707317406487").done();
     b.property("height", 0xb6c10cfea61b1aL).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("51440707317406490").done();
+    b.property("doorsNumber", 0x133753e11ae4ebc6L).type(PrimitiveTypeId.INTEGER).origin("1384667636723674054").done();
     return b.create();
   }
 }

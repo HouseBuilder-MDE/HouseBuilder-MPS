@@ -367,7 +367,7 @@
     </node>
     <node concept="1TJgyi" id="1cRkY4qSvxO" role="1TKVEl">
       <property role="IQ2nx" value="1384667636723480692" />
-      <property role="TrG5h" value="group" />
+      <property role="TrG5h" value="groundType" />
       <ref role="AX2Wp" node="2cPV89kPUBD" resolve="GroundType" />
     </node>
     <node concept="PrWs8" id="1cRkY4qSvxM" role="PzmwI">
@@ -385,6 +385,16 @@
     <node concept="1TJgyi" id="2QKgNYDxD5" role="1TKVEl">
       <property role="IQ2nx" value="51440707317406277" />
       <property role="TrG5h" value="model" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1cRkY4qTeIV" role="1TKVEl">
+      <property role="IQ2nx" value="1384667636723674043" />
+      <property role="TrG5h" value="os" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1cRkY4qTeIY" role="1TKVEl">
+      <property role="IQ2nx" value="1384667636723674046" />
+      <property role="TrG5h" value="osVersion" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="2QKgNYDxG_" role="1TKVEi">
@@ -411,6 +421,11 @@
       <property role="IQ2nx" value="51440707317406282" />
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="2QKgNYDxDm" resolve="ActuatorType" />
+    </node>
+    <node concept="1TJgyi" id="1cRkY4qTeIP" role="1TKVEl">
+      <property role="IQ2nx" value="1384667636723674037" />
+      <property role="TrG5h" value="model" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="2QKgNYDxD8" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -464,6 +479,11 @@
       <property role="IQ2nx" value="51440707317406345" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
+    </node>
+    <node concept="1TJgyi" id="1cRkY4qTeJ2" role="1TKVEl">
+      <property role="IQ2nx" value="1384667636723674050" />
+      <property role="TrG5h" value="model" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="2QKgNYDxIf" role="1TKVEi">
       <property role="IQ2ns" value="51440707317406607" />
@@ -547,6 +567,11 @@
       <property role="TrG5h" value="height" />
       <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
     </node>
+    <node concept="1TJgyi" id="1cRkY4qTeJ6" role="1TKVEl">
+      <property role="IQ2nx" value="1384667636723674054" />
+      <property role="TrG5h" value="doorsNumber" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2QKgNYDxHI">
     <property role="EcuMT" value="51440707317406574" />
@@ -559,6 +584,11 @@
       <property role="IQ2nx" value="51440707317406577" />
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="2QKgNYDxFY" resolve="DeviceType" />
+    </node>
+    <node concept="1TJgyi" id="1cRkY4qTeIS" role="1TKVEl">
+      <property role="IQ2nx" value="1384667636723674040" />
+      <property role="TrG5h" value="model" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
