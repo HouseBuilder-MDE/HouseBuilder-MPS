@@ -366,6 +366,7 @@
   <node concept="1TIwiD" id="2cPV89kRQBE">
     <property role="EcuMT" value="2537194009606973930" />
     <property role="TrG5h" value="OuterSpace" />
+    <property role="R4oN_" value="OuterSpace from the house, e.g. Garden, Balcony, etc" />
     <ref role="1TJDcQ" node="74CaDYVii1" resolve="Space" />
     <node concept="1TJgyi" id="1cRkY4qSvxK" role="1TKVEl">
       <property role="IQ2nx" value="1384667636723480688" />
@@ -560,6 +561,7 @@
   <node concept="1TIwiD" id="2QKgNYDxGi">
     <property role="EcuMT" value="51440707317406482" />
     <property role="TrG5h" value="Window" />
+    <property role="R4oN_" value="Generic Window that does not correspond to a passage." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2QKgNYDxGj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -583,6 +585,7 @@
   <node concept="1TIwiD" id="2QKgNYDxHI">
     <property role="EcuMT" value="51440707317406574" />
     <property role="TrG5h" value="Device" />
+    <property role="R4oN_" value="Device that can be to an Actuator" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2QKgNYDxHJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
