@@ -638,9 +638,9 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_2() {
-    AbstractCellListHandler handler = new controllerListHandler_2in9hy_db3a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new controllersListHandler_2in9hy_db3a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
-    editorCell.setCellId("refNodeList_controller");
+    editorCell.setCellId("refNodeList_controllers");
     Style style = new StyleImpl();
     style.set(StyleAttributes.INDENT_LAYOUT_CHILDREN_NEWLINE, true);
     style.set(StyleAttributes.INDENT_LAYOUT_INDENT, true);
@@ -649,11 +649,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class controllerListHandler_2in9hy_db3a extends RefNodeListHandler {
+  private static class controllersListHandler_2in9hy_db3a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public controllerListHandler_2in9hy_db3a(SNode ownerNode, EditorContext context) {
+    public controllersListHandler_2in9hy_db3a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -663,7 +663,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       return myNode;
     }
     public SContainmentLink getSLink() {
-      return LINKS.controller$1yE6;
+      return LINKS.controllers$1yE6;
     }
     public SAbstractConcept getChildSConcept() {
       return CONCEPTS.Controller$1E;
@@ -676,7 +676,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(controllerListHandler_2in9hy_db3a.this.getNode(), LINKS.controller$1yE6));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(controllersListHandler_2in9hy_db3a.this.getNode(), LINKS.controllers$1yE6));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -746,6 +746,6 @@ import org.jetbrains.mps.openapi.language.SConcept;
   private static final class LINKS {
     /*package*/ static final SContainmentLink floors$_I9k = MetaAdapterFactory.getContainmentLink(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116b5067L, 0x7a62d4fd116b8344L, "floors");
     /*package*/ static final SContainmentLink passages$yAWF = MetaAdapterFactory.getContainmentLink(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116b5067L, 0x2335ec8254e140c2L, "passages");
-    /*package*/ static final SContainmentLink controller$1yE6 = MetaAdapterFactory.getContainmentLink(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116b5067L, 0x19140125248cc770L, "controller");
+    /*package*/ static final SContainmentLink controllers$1yE6 = MetaAdapterFactory.getContainmentLink(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116b5067L, 0x19140125248cc770L, "controllers");
   }
 }

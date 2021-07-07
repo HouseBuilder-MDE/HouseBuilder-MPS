@@ -149,7 +149,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/8818845203728925501");
     b.version(2);
     b.property("level", 0x7a62d4fd116b8342L).type(PrimitiveTypeId.INTEGER).origin("8818845203728925506").done();
-    b.aggregate("spaces", 0x1c4a0aa7eed248dL).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2481L).optional(false).ordered(true).multiple(true).origin("127403343607571597").done();
+    b.aggregate("rooms", 0x1c4a0aa7eed248dL).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed248fL).optional(false).ordered(true).multiple(true).origin("127403343607571597").done();
+    b.aggregate("outerSpaces", 0x6eca1909640a6303L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254df69eaL).optional(true).ordered(true).multiple(true).origin("7983220817591427843").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForHouse() {
@@ -166,7 +167,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("buildingDate", 0x7a62d4fd116b50afL).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116d6ea9L)).origin("8818845203728912559").done();
     b.aggregate("floors", 0x7a62d4fd116b8344L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116b833dL).optional(false).ordered(true).multiple(true).origin("8818845203728925508").done();
     b.aggregate("passages", 0x2335ec8254e140c2L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7aa09L).optional(true).ordered(true).multiple(true).origin("2537194009607094466").done();
-    b.aggregate("controller", 0x19140125248cc770L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a42L).optional(true).ordered(true).multiple(true).origin("1807070609521035120").done();
+    b.aggregate("controllers", 0x19140125248cc770L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a42L).optional(true).ordered(true).multiple(true).origin("1807070609521035120").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForOuterSpace() {
@@ -188,6 +189,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.associate("spaceA", 0x2335ec8254d7aa0cL).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2481L).optional(false).origin("2537194009606466060").done();
     b.associate("spaceB", 0x2335ec8254d7aa0eL).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2481L).optional(false).origin("2537194009606466062").done();
+    b.aggregate("devices", 0x4819fffa39c2e80fL).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61b6eL).optional(true).ordered(true).multiple(true).origin("5195465095324559375").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRoom() {
@@ -215,7 +217,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
   private static ConceptDescriptor createDescriptorForSpace() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("HBML", "Space", 0xb0b8832625824427L, 0x889661f7684b0da0L, 0x1c4a0aa7eed2481L);
-    b.class_(false, true, false);
+    b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.origin("r:662f0f43-f4fc-4ca0-87f9-029b3756b650(HBML.structure)/127403343607571585");
     b.version(2);

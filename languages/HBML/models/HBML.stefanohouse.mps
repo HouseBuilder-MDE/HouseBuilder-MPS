@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9a413c65-7045-4891-8c77-f6e8a414245c(HBML.myHouse)">
+<model ref="r:9a413c65-7045-4891-8c77-f6e8a414245c(HBML.stefanohouse)">
   <persistence version="9" />
   <languages>
     <use id="b0b88326-2582-4427-8896-61f7684b0da0" name="HBML" version="0" />
@@ -14,7 +14,8 @@
     <language id="b0b88326-2582-4427-8896-61f7684b0da0" name="HBML">
       <concept id="8818845203728925501" name="HBML.structure.Floor" flags="ng" index="1F2lv0">
         <property id="8818845203728925506" name="level" index="1F2luZ" />
-        <child id="127403343607571597" name="spaces" index="1ZaogB" />
+        <child id="7983220817591427843" name="outerSpaces" index="aK7Ca" />
+        <child id="127403343607571597" name="rooms" index="1ZaogB" />
       </concept>
       <concept id="8818845203728912487" name="HBML.structure.House" flags="ng" index="1F2oiq">
         <property id="7107866991809905190" name="province" index="3navlS" />
@@ -23,7 +24,7 @@
         <property id="8818845203728912556" name="address" index="1F2ohh" />
         <property id="8818845203728912559" name="buildingDate" index="1F2ohi" />
         <property id="8818845203728912554" name="state" index="1F2ohn" />
-        <child id="1807070609521035120" name="controller" index="XAcpl" />
+        <child id="1807070609521035120" name="controllers" index="XAcpl" />
         <child id="8818845203728925508" name="floors" index="1F2luT" />
         <child id="2537194009607094466" name="passages" index="1RPaL0" />
       </concept>
@@ -39,11 +40,6 @@
       <concept id="2537194009606973930" name="HBML.structure.OuterSpace" flags="ng" index="1RUClC">
         <property id="1384667636723480688" name="type" index="9PEIh" />
         <property id="1384667636723480692" name="groundType" index="9PEIl" />
-      </concept>
-      <concept id="51440707317406482" name="HBML.structure.Window" flags="ng" index="3Y4dCu">
-        <property id="1384667636723674054" name="doorsNumber" index="9OVwB" />
-        <property id="51440707317406490" name="height" index="3Y4dCm" />
-        <property id="51440707317406487" name="width" index="3Y4dCr" />
       </concept>
       <concept id="51440707317406574" name="HBML.structure.Device" flags="ng" index="3Y4dDy">
         <property id="1384667636723674040" name="model" index="9OVxp" />
@@ -70,7 +66,6 @@
       <concept id="127403343607571599" name="HBML.structure.Room" flags="ng" index="1Zaog_">
         <property id="2537194009606466016" name="height" index="1RS$ly" />
         <property id="127403343607571600" name="type" index="1ZaogU" />
-        <child id="51440707317406609" name="windows" index="3Y4dEt" />
       </concept>
       <concept id="127403343607571585" name="HBML.structure.Space" flags="ng" index="1ZaogF">
         <property id="2537194009606466019" name="width" index="1RS$lx" />
@@ -80,7 +75,7 @@
     </language>
   </registry>
   <node concept="1F2oiq" id="2cPV89kQOHj">
-    <property role="TrG5h" value="Casa di famiglia a Vasto" />
+    <property role="TrG5h" value="Casa di Stefano a Vasto" />
     <property role="1F2ohn" value="Italia" />
     <property role="1F2ohh" value="Corso Mazzini 338B Scala A" />
     <property role="1F2lvf" value="Vasto" />
@@ -98,7 +93,7 @@
     <node concept="1F2lv0" id="2cPV89kS0o$" role="1F2luT">
       <property role="TrG5h" value="Terzo Piano" />
       <property role="1F2luZ" value="3" />
-      <node concept="1RUClC" id="2cPV89kS0oA" role="1ZaogB">
+      <node concept="1RUClC" id="2cPV89kS0oA" role="aK7Ca">
         <property role="TrG5h" value="Balcone Principale" />
         <property role="1Zaogw" value="6.7" />
         <property role="1RS$lx" value="5.6" />
@@ -117,25 +112,9 @@
         <property role="1Zaogw" value="6.0" />
         <property role="1RS$lx" value="7.0" />
         <node concept="3Y4dDy" id="Qm4o1LAXMm" role="3Y4dDZ">
-          <property role="3Y4dDX" value="2QKgNYDxG3/SOCKET" />
-          <property role="TrG5h" value="P" />
-          <property role="9OVxp" value="Aukey" />
-        </node>
-        <node concept="3Y4dDy" id="Qm4o1LAXMo" role="3Y4dDZ">
-          <property role="TrG5h" value="p" />
-          <property role="3Y4dDX" value="2QKgNYDxG3/SOCKET" />
-          <property role="9OVxp" value="Aukey" />
-        </node>
-        <node concept="3Y4dDy" id="Qm4o1LAXMr" role="3Y4dDZ">
-          <property role="3Y4dDX" value="2QKgNYDxG7/ROLLER_SHUTTERS" />
-          <property role="TrG5h" value="Tapparella Smart" />
-          <property role="9OVxp" value="Aio" />
-        </node>
-        <node concept="3Y4dCu" id="6yNBuAuOl8B" role="3Y4dEt">
-          <property role="TrG5h" value="finestra salotto" />
-          <property role="3Y4dCr" value="2.4" />
-          <property role="3Y4dCm" value="2.2" />
-          <property role="9OVwB" value="3" />
+          <property role="3Y4dDX" value="2QKgNYDxG0/APPLIANCE" />
+          <property role="TrG5h" value="Smart TV" />
+          <property role="9OVxp" value="Samsung Q85T" />
         </node>
       </node>
     </node>
@@ -144,11 +123,11 @@
       <property role="3Y4dH9" value="MKR WIFI 1010" />
       <property role="9OVxq" value="Simba" />
       <property role="9OVxv" value="2.0" />
-      <node concept="3Y4dHb" id="Qm4o1LAXMS" role="3Y4dCD">
-        <property role="TrG5h" value="FTVOGUE" />
-        <property role="3Y4dH6" value="2QKgNYDxDH/ELECRTICAL" />
-        <property role="9OVxk" value="Caspberry" />
-        <ref role="3Y4dEr" node="Qm4o1LAXMr" resolve="Tapparella Smart" />
+      <node concept="3Y4dHb" id="4wpZZCTLyIY" role="3Y4dCD">
+        <property role="TrG5h" value="Main Actuator" />
+        <property role="3Y4dH6" value="2QKgNYDxDH/ELECTRICAL" />
+        <property role="9OVxk" value="KV02" />
+        <ref role="3Y4dEr" node="Qm4o1LAXMm" resolve="Smart TV" />
       </node>
       <node concept="3Y4dI8" id="Qm4o1LAXMT" role="XAcp8">
         <property role="TrG5h" value="Netatmo" />

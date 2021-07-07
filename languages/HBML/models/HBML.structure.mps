@@ -28,7 +28,6 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
-        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -117,7 +116,7 @@
     <node concept="1TJgyj" id="1$k0ik$zctK" role="1TKVEi">
       <property role="IQ2ns" value="1807070609521035120" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="controller" />
+      <property role="20kJfa" value="controllers" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2QKgNYDxD2" resolve="Controller" />
     </node>
@@ -138,22 +137,28 @@
     <node concept="1TJgyj" id="74CaDYViid" role="1TKVEi">
       <property role="IQ2ns" value="127403343607571597" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="spaces" />
+      <property role="20kJfa" value="rooms" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="74CaDYVii1" resolve="Space" />
+      <ref role="20lvS9" node="74CaDYViif" resolve="Room" />
+    </node>
+    <node concept="1TJgyj" id="6Va6g_$2Ac3" role="1TKVEi">
+      <property role="IQ2ns" value="7983220817591427843" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="outerSpaces" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2cPV89kRQBE" resolve="OuterSpace" />
     </node>
   </node>
   <node concept="Az7Fb" id="7DyPfOhrmUD">
     <property role="3F6X1D" value="8818845203729051305" />
     <property role="TrG5h" value="DateMY" />
     <property role="FLfZY" value="^(((0)[0-9])|((1)[0-2]))(\\/)\\d{4}$" />
-    <property role="3GE5qa" value="Type System" />
+    <property role="3GE5qa" value="typesystem" />
   </node>
   <node concept="1TIwiD" id="74CaDYVii1">
     <property role="EcuMT" value="127403343607571585" />
     <property role="TrG5h" value="Space" />
     <property role="R4oN_" value="A space represents a structure with a size" />
-    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="74CaDYVii2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -202,7 +207,7 @@
   <node concept="25R3W" id="74CaDYViii">
     <property role="3F6X1D" value="127403343607571602" />
     <property role="TrG5h" value="RoomType" />
-    <property role="3GE5qa" value="Type System" />
+    <property role="3GE5qa" value="typesystem" />
     <ref role="1H5jkz" node="1cRkY4qTDpe" resolve="SIMPLE" />
     <node concept="25R33" id="1cRkY4qTDpe" role="25R1y">
       <property role="3tVfz5" value="1384667636723783246" />
@@ -267,7 +272,7 @@
   </node>
   <node concept="25R3W" id="2cPV89kPUBD">
     <property role="3F6X1D" value="2537194009606466025" />
-    <property role="3GE5qa" value="Type System" />
+    <property role="3GE5qa" value="typesystem" />
     <property role="TrG5h" value="GroundType" />
     <node concept="25R33" id="2cPV89kPUBE" role="25R1y">
       <property role="3tVfz5" value="2537194009606466026" />
@@ -284,7 +289,7 @@
   </node>
   <node concept="25R3W" id="2cPV89kPUBM">
     <property role="3F6X1D" value="2537194009606466034" />
-    <property role="3GE5qa" value="Type System" />
+    <property role="3GE5qa" value="typesystem" />
     <property role="TrG5h" value="OuterSpaceType" />
     <node concept="25R33" id="2cPV89kPUBN" role="25R1y">
       <property role="3tVfz5" value="2537194009606466035" />
@@ -301,7 +306,7 @@
   </node>
   <node concept="25R3W" id="2cPV89kPUBV">
     <property role="3F6X1D" value="2537194009606466043" />
-    <property role="3GE5qa" value="Type System" />
+    <property role="3GE5qa" value="typesystem" />
     <property role="TrG5h" value="DoorType" />
     <ref role="1H5jkz" node="2cPV89kPUBW" resolve="SIMPLE" />
     <node concept="25R33" id="2cPV89kPUBW" role="25R1y">
@@ -340,6 +345,13 @@
       <property role="20kJfa" value="spaceB" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="74CaDYVii1" resolve="Space" />
+    </node>
+    <node concept="1TJgyj" id="4wpZZCTKIwf" role="1TKVEi">
+      <property role="IQ2ns" value="5195465095324559375" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="devices" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2QKgNYDxHI" resolve="Device" />
     </node>
   </node>
   <node concept="1TIwiD" id="2cPV89kPUCh">
@@ -447,7 +459,7 @@
   </node>
   <node concept="25R3W" id="2QKgNYDxDm">
     <property role="3F6X1D" value="51440707317406294" />
-    <property role="3GE5qa" value="Type System" />
+    <property role="3GE5qa" value="typesystem" />
     <property role="TrG5h" value="ActuatorType" />
     <node concept="25R33" id="2QKgNYDxDn" role="25R1y">
       <property role="3tVfz5" value="51440707317406295" />
@@ -502,7 +514,7 @@
   </node>
   <node concept="25R3W" id="2QKgNYDxFr">
     <property role="3F6X1D" value="51440707317406427" />
-    <property role="3GE5qa" value="Type System" />
+    <property role="3GE5qa" value="typesystem" />
     <property role="TrG5h" value="SensorType" />
     <node concept="25R33" id="2QKgNYDxFs" role="25R1y">
       <property role="3tVfz5" value="51440707317406428" />
@@ -535,7 +547,7 @@
   </node>
   <node concept="25R3W" id="2QKgNYDxFY">
     <property role="3F6X1D" value="51440707317406462" />
-    <property role="3GE5qa" value="Type System" />
+    <property role="3GE5qa" value="typesystem" />
     <property role="TrG5h" value="DeviceType" />
     <node concept="25R33" id="2QKgNYDxFZ" role="25R1y">
       <property role="3tVfz5" value="51440707317406463" />

@@ -104,7 +104,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
   }
   private EditorCell createConstant_1() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "connect to device");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "connected to device");
     editorCell.setCellId("Constant_ik8pix_c0");
     editorCell.setDefaultText("");
     return editorCell;

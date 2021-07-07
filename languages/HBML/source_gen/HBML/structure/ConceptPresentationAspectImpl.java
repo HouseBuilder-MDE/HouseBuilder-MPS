@@ -111,6 +111,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
         if (props_Space == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
           cpb.shortDesc("A space represents a structure with a size");
+          cpb.presentationByName();
           props_Space = cpb.create();
         }
         return props_Space;

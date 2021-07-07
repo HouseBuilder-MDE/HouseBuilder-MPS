@@ -67,7 +67,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createProperty_0());
     editorCell.addEditorCell(createConstant_1());
     editorCell.addEditorCell(createCollection_1());
-    editorCell.addEditorCell(createConstant_11());
+    editorCell.addEditorCell(createConstant_12());
     return editorCell;
   }
   private EditorCell createConstant_0() {
@@ -130,6 +130,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.addEditorCell(createConstant_8());
     editorCell.addEditorCell(createConstant_9());
     editorCell.addEditorCell(createConstant_10());
+    editorCell.addEditorCell(createConstant_11());
     editorCell.addEditorCell(createRefNodeList_0());
     return editorCell;
   }
@@ -291,14 +292,23 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_9() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "devices");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "");
     editorCell.setCellId("Constant_nb5awg_l3a");
+    Style style = new StyleImpl();
+    style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
+    editorCell.getStyle().putAll(style);
     editorCell.setDefaultText("");
     return editorCell;
   }
   private EditorCell createConstant_10() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "devices");
     editorCell.setCellId("Constant_nb5awg_m3a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createConstant_11() {
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, ":");
+    editorCell.setCellId("Constant_nb5awg_n3a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, true);
     style.set(StyleAttributes.INDENT_LAYOUT_NEW_LINE, true);
@@ -307,7 +317,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createRefNodeList_0() {
-    AbstractCellListHandler handler = new devicesListHandler_nb5awg_n3a(myNode, getEditorContext());
+    AbstractCellListHandler handler = new devicesListHandler_nb5awg_o3a(myNode, getEditorContext());
     EditorCell_Collection editorCell = handler.createCells(new CellLayout_Indent(), false);
     editorCell.setCellId("refNodeList_devices");
     Style style = new StyleImpl();
@@ -318,11 +328,11 @@ import org.jetbrains.mps.openapi.language.SConcept;
     editorCell.setSRole(handler.getElementSRole());
     return editorCell;
   }
-  private static class devicesListHandler_nb5awg_n3a extends RefNodeListHandler {
+  private static class devicesListHandler_nb5awg_o3a extends RefNodeListHandler {
     @NotNull
     private SNode myNode;
 
-    public devicesListHandler_nb5awg_n3a(SNode ownerNode, EditorContext context) {
+    public devicesListHandler_nb5awg_o3a(SNode ownerNode, EditorContext context) {
       super(context, false);
       myNode = ownerNode;
     }
@@ -345,7 +355,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     }
     public EditorCell createEmptyCell() {
       getCellFactory().pushCellContext();
-      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(devicesListHandler_nb5awg_n3a.this.getNode(), LINKS.devices$yKtD));
+      getCellFactory().setNodeLocation(new SNodeLocation.FromParentAndLink(devicesListHandler_nb5awg_o3a.this.getNode(), LINKS.devices$yKtD));
       try {
         EditorCell emptyCell = null;
         emptyCell = super.createEmptyCell();
@@ -385,7 +395,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       }
     }
   }
-  private EditorCell createConstant_11() {
+  private EditorCell createConstant_12() {
     EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "}");
     editorCell.setCellId("Constant_nb5awg_e0");
     Style style = new StyleImpl();
