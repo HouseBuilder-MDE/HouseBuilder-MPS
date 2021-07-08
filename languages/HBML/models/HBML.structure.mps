@@ -64,7 +64,7 @@
     <property role="EcuMT" value="8818845203728912487" />
     <property role="TrG5h" value="House" />
     <property role="19KtqR" value="true" />
-    <property role="R4oN_" value="Root object of an HouseBuilder model" />
+    <property role="R4oN_" value="Root object of an HouseBuilder model. It represents an home like an apartment or an entire building" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7DyPfOhqP1C" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -113,6 +113,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2cPV89kPUC9" resolve="Passage" />
     </node>
+    <node concept="1TJgyj" id="7WcrGFu47K8" role="1TKVEi">
+      <property role="IQ2ns" value="9154813960125447176" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="doors" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2cPV89kPUCh" resolve="Door" />
+    </node>
     <node concept="1TJgyj" id="1$k0ik$zctK" role="1TKVEi">
       <property role="IQ2ns" value="1807070609521035120" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -124,7 +131,7 @@
   <node concept="1TIwiD" id="7DyPfOhqScX">
     <property role="EcuMT" value="8818845203728925501" />
     <property role="TrG5h" value="Floor" />
-    <property role="R4oN_" value="The floor of a house" />
+    <property role="R4oN_" value="A floor of the house" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7DyPfOhqScY" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -325,11 +332,15 @@
       <property role="3tVfz5" value="2537194009606466052" />
       <property role="TrG5h" value="ENTRANCE_DOOR" />
     </node>
+    <node concept="25R33" id="7WcrGFu4u4s" role="25R1y">
+      <property role="3tVfz5" value="9154813960125538588" />
+      <property role="TrG5h" value="SLIDING_DOOR" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2cPV89kPUC9">
     <property role="EcuMT" value="2537194009606466057" />
     <property role="TrG5h" value="Passage" />
-    <property role="R4oN_" value="Create a passage between two spaces" />
+    <property role="R4oN_" value="Create a passage between two spaces. It can contain devices" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2cPV89kPUCa" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -374,11 +385,16 @@
       <property role="TrG5h" value="height" />
       <ref role="AX2Wp" to="tpee:gc$lTUB" resolve="_FPNumber_String" />
     </node>
+    <node concept="1TJgyi" id="7WcrGFu4u4B" role="1TKVEl">
+      <property role="IQ2nx" value="9154813960125538599" />
+      <property role="TrG5h" value="doorsNumber" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2cPV89kRQBE">
     <property role="EcuMT" value="2537194009606973930" />
     <property role="TrG5h" value="OuterSpace" />
-    <property role="R4oN_" value="OuterSpace from the house, e.g. Garden, Balcony, etc" />
+    <property role="R4oN_" value="Outer space of the house, e.g. Garden, Balcony, etc" />
     <ref role="1TJDcQ" node="74CaDYVii1" resolve="Space" />
     <node concept="1TJgyi" id="1cRkY4qSvxK" role="1TKVEl">
       <property role="IQ2nx" value="1384667636723480688" />
@@ -573,7 +589,7 @@
   <node concept="1TIwiD" id="2QKgNYDxGi">
     <property role="EcuMT" value="51440707317406482" />
     <property role="TrG5h" value="Window" />
-    <property role="R4oN_" value="Generic Window that does not correspond to a passage." />
+    <property role="R4oN_" value="Generic recessed window that does not correspond to a passage." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2QKgNYDxGj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -597,7 +613,7 @@
   <node concept="1TIwiD" id="2QKgNYDxHI">
     <property role="EcuMT" value="51440707317406574" />
     <property role="TrG5h" value="Device" />
-    <property role="R4oN_" value="Device that can be to an Actuator" />
+    <property role="R4oN_" value="Device that can be controlled optionally by an Actuator" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2QKgNYDxHJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

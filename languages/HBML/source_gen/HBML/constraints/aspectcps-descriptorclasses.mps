@@ -4284,7 +4284,7 @@
                     <node concept="1pGfFk" id="lr" role="2ShVmc">
                       <ref role="37wK5l" to="j809:~MessageProvider$StringMsg.&lt;init&gt;(java.lang.String)" resolve="MessageProvider.StringMsg" />
                       <node concept="Xl_RD" id="ls" role="37wK5m">
-                        <property role="Xl_RC" value="numbers of doors must be a numbner grather than 0" />
+                        <property role="Xl_RC" value="Number of window doors must be a number greater than 0" />
                         <uo k="s:originTrace" v="n:1384667636724130436" />
                       </node>
                     </node>

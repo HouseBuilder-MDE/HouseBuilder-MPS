@@ -140,6 +140,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("type", 0x2335ec8254d7aa12L).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7a9fbL)).origin("2537194009606466066").done();
     b.property("width", 0x2335ec8254d7aa14L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("2537194009606466068").done();
     b.property("height", 0x2335ec8254d7aa17L).type(MetaIdFactory.dataTypeId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0x10324579ea7L)).origin("2537194009606466071").done();
+    b.property("doorsNumber", 0x7f0c6ecade11e127L).type(PrimitiveTypeId.INTEGER).origin("9154813960125538599").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFloor() {
@@ -167,6 +168,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("buildingDate", 0x7a62d4fd116b50afL).type(MetaIdFactory.dataTypeId(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116d6ea9L)).origin("8818845203728912559").done();
     b.aggregate("floors", 0x7a62d4fd116b8344L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x7a62d4fd116b833dL).optional(false).ordered(true).multiple(true).origin("8818845203728925508").done();
     b.aggregate("passages", 0x2335ec8254e140c2L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7aa09L).optional(true).ordered(true).multiple(true).origin("2537194009607094466").done();
+    b.aggregate("doors", 0x7f0c6ecade107c08L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0x2335ec8254d7aa11L).optional(true).ordered(true).multiple(true).origin("9154813960125447176").done();
     b.aggregate("controllers", 0x19140125248cc770L).target(0xb0b8832625824427L, 0x889661f7684b0da0L, 0xb6c10cfea61a42L).optional(true).ordered(true).multiple(true).origin("1807070609521035120").done();
     return b.create();
   }

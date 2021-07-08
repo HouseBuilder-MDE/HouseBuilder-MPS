@@ -44,7 +44,7 @@ public final class Window_ConstraintsFeedback extends BaseFeedbackDescriptor {
     @NotNull
     @Override
     public MessageProvider.Msg yieldMessage(ContainmentContext context) {
-      return new MessageProvider.StringMsg("numbers of doors must be a numbner grather than 0");
+      return new MessageProvider.StringMsg("Number of window doors must be a number greater than 0");
     }
   };
 

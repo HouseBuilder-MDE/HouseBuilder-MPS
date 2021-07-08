@@ -46,7 +46,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Device:
         if (props_Device == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Device that can be to an Actuator");
+          cpb.shortDesc("Device that can be controlled optionally by an Actuator");
           cpb.presentationByName();
           props_Device = cpb.create();
         }
@@ -62,7 +62,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Floor:
         if (props_Floor == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("The floor of a house");
+          cpb.shortDesc("A floor of the house");
           cpb.presentationByName();
           props_Floor = cpb.create();
         }
@@ -70,7 +70,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.House:
         if (props_House == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Root object of an HouseBuilder model");
+          cpb.shortDesc("Root object of an HouseBuilder model. It represents an home like an apartment or an entire building");
           cpb.presentationByName();
           props_House = cpb.create();
         }
@@ -78,7 +78,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.OuterSpace:
         if (props_OuterSpace == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("OuterSpace from the house, e.g. Garden, Balcony, etc");
+          cpb.shortDesc("Outer space of the house, e.g. Garden, Balcony, etc");
           cpb.presentationByName();
           props_OuterSpace = cpb.create();
         }
@@ -86,7 +86,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Passage:
         if (props_Passage == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Create a passage between two spaces");
+          cpb.shortDesc("Create a passage between two spaces. It can contain devices");
           cpb.presentationByName();
           props_Passage = cpb.create();
         }
@@ -118,7 +118,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case LanguageConceptSwitch.Window:
         if (props_Window == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.shortDesc("Generic Window that does not correspond to a passage.");
+          cpb.shortDesc("Generic recessed window that does not correspond to a passage.");
           cpb.presentationByName();
           props_Window = cpb.create();
         }

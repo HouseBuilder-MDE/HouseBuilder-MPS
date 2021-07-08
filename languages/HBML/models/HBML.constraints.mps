@@ -254,7 +254,7 @@
         <node concept="1DCEQD" id="1cRkY4qUUcQ" role="1DCEQI">
           <node concept="16I2mz" id="1cRkY4qUYa3" role="16N$OO">
             <node concept="16N$OT" id="1cRkY4qUYa4" role="16I2mt">
-              <property role="16N$OU" value="numbers of doors must be a numbner grather than 0" />
+              <property role="16N$OU" value="Number of window doors must be a number greater than 0" />
             </node>
           </node>
         </node>

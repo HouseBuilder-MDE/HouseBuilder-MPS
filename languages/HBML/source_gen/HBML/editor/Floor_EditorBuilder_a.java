@@ -287,7 +287,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     return editorCell;
   }
   private EditorCell createConstant_8() {
-    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "outer space");
+    EditorCell_Constant editorCell = new EditorCell_Constant(getEditorContext(), myNode, "outer spaces");
     editorCell.setCellId("Constant_hpwqe8_i3a");
     editorCell.setDefaultText("");
     return editorCell;
